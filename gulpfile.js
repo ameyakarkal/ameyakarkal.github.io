@@ -6,14 +6,12 @@ var gulp = require('gulp'),
 	exec = require('child_process').exec,
 	gutil = require('gulp-util'),
 	minifyCss = require('gulp-minify-css'),
-	sass = require('gulp-sass'),
 	rename = require('gulp-rename'),
-	sh = require('shelljs'),
-	zip = require('gulp-zip');
+	sh = require('shelljs');
 	
 var paths = {
 	html: ['./index.html', './templates/**/*.html'],
-	js: ['./www/js/**/*.js']
+	js: ['js/**/*.js']
 };
 
 gulp.task('connect', function() {
@@ -68,3 +66,8 @@ gulp.task('watch', function() {
 
 // Tasks
 gulp.task('serve', ['default', 'connect', 'watch']);
+
+
+gulp.task('unittest',function(callback){
+    return exec('karma start config/karma.conf.js',cb);  
+});

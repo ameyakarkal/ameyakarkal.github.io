@@ -1,4 +1,4 @@
-﻿//<reference path="lib/angular.min.js"/>
+//<reference path="lib/angular.min.js"/>
 
 var home = angular.module('home', []);
 

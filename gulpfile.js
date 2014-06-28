@@ -25,18 +25,16 @@ gulp.task('connect', function() {
 gulp.task('default', ['js']);
 
 gulp.task('html', function (done) {
-  gulp.src(['./index.html', './templates/**/*.html'])
+  gulp.src(['./index.html','./blog.html', './templates/**/*.html'])
     .pipe(connect.reload())
 	.on('end', done);
 });
 
 gulp.task('js', function(done) {
     gulp.src([
-                './js/controllers/**/*.js',
-                './js/services/**/*.js',
                 './js/home.js',
-                './js/controllers.js',
-                './js/services.js'
+                './js/controllers/**/*.js',
+                './js/services/**/*.js'
 		])
         //.pipe(uglify())
         .pipe(concat('app.min.js'))
@@ -44,19 +42,6 @@ gulp.task('js', function(done) {
 		.pipe(connect.reload())
         .on('end', done);
 });
-
-//gulp.task('sass', function(done) {
-//  gulp.src(['./scss/app.scss', './scss/ionic.app.scss'])
-//    .pipe(sass())
-//    .pipe(gulp.dest('./www/css/'))
-//    .pipe(minifyCss({
-//		keepSpecialComments: 0
-//    }))
-//    .pipe(rename({ extname: '.min.css' }))
-//    .pipe(gulp.dest('./www/css/'))
-//	.pipe(connect.reload())
-//    .on('end', done);
-//});
 
 gulp.task('watch', function() {
 	gulp.watch(paths.js, ['js']);

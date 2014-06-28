@@ -1,7 +1,4 @@
 //<reference path="lib/angular.min.js"/>
-
-var home = angular.module('home', []);
-
-home.controller('homeController', function($scope) {
-
-});
+angular.module('home', []);
+angular.module('learning',[]);
+angular.module('blogger', []);

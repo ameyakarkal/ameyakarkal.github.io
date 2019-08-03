@@ -1,1 +1,15 @@
-theme: jekyll-theme-cayman
+title: Ameya Karkal
+author: ameya karkal
+description: developer.
+
+#social links
+twitter_username: frictionless
+github_username: ameyakarkal
+linkedin_username: ameyakarkal
+google_analytics: UA-6815622-6
+theme: minima
+header_pages:
+   - header/resume.md
+   - header/github.md
+show_excerpts: true
+excerpt_separator: <!--more-->

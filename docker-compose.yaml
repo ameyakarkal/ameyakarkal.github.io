@@ -1,0 +1,14 @@
+version: '3'
+services:
+  blog:
+    command: ./run.sh
+    image: jekyll/jekyll:latest
+    volumes:
+      - ./:/srv/jekyll
+      - ./vendor/bundle:/usr/local/bundle
+      - ./_site:/srv/jekyll/_site
+    ports:
+      - 4000:4000
+      - 35729
+      - 3000
+      -   80

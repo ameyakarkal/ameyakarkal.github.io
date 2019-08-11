@@ -1,13 +1,14 @@
 ---
 title : Elastic Search
 author : Ameya Karkal
-description : using Elastic search
+description : My journey into learning elastic search using YouTube and PluralSight.
+tags: elasticsearch
 ---
 ## why
 - As part of my full time project WE/I have been using elastic search as the final storage of data. I had in a previous project and other side initiatives used MongoDB back in 2015 but never got the opportunity to work with ES till now.
 
 ## setup
-- docker ;)
+- Checkout [https://github.com/ameyakarkal/learn-elasticsearch](https://github.com/ameyakarkal/learn-elasticsearch)
 
 ## concepts : 
 ### node and cluster

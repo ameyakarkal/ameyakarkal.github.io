@@ -1,3 +1,6 @@
+---
+tags: elasticsearch
+---
 # Aggregations in elastic search
 
 - Aggr

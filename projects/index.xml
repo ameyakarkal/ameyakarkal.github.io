@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Projects on ameya.karkal</title>
+    <link>https://ameyakarkal.github.io/projects/</link>
+    <description>Recent content in Projects on ameya.karkal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Jan 2022 00:00:00 -0500</lastBuildDate><atom:link href="https://ameyakarkal.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>insight</title>
+      <link>https://ameyakarkal.github.io/projects/insight/</link>
+      <pubDate>Wed, 26 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://ameyakarkal.github.io/projects/insight/</guid>
+      <description>Insight is an analytics product that provides a platform to consume data contributed by multiple products at Anthology Inc
+Role  Led initiative to architect and develop configuration driven ETL for analytics product Played key role in an endeavour for cross team data initiative Promoted approach for developing solutions based on iterative experiments rather than hypothesis Working in a team that uses kanban approach to achieve set Objectives measured by Key Results (OKRs)  Contributions  Led design and implementation for AKS based services for indexing data in elastic search clusters.</description>
+    </item>
+    
+  </channel>
+</rss>

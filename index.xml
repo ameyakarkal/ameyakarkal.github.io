@@ -8,21 +8,18 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 26 Jan 2022 00:00:00 -0500</lastBuildDate><atom:link href="https://ameyakarkal.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>course evaluations 🗳️</title>
-      <link>https://ameyakarkal.github.io/projects/ce/</link>
+      <title>me</title>
+      <link>https://ameyakarkal.github.io/me/</link>
       <pubDate>Wed, 26 Jan 2022 00:00:00 -0500</pubDate>
       
-      <guid>https://ameyakarkal.github.io/projects/ce/</guid>
-      <description>entity-framework azure-webapps azure-devops azure-functions dotnet-core
-Web based tool that caters to student facing survey, administrator facing reporting suite for higher education campuses.
-Contributions   Involved in design and implementation of serverless mass mailing infrastructure using Azure Functions
-  Designed and architected data pipelines using Azure Data Factory and Azure Datalake Analytics
-  Contributed to migrating/restructuring multiple services as part of on-prem to azure migration
-  Researched reporting solutions for the team to move away from on premise SSIS (SQL Server Integration Services).</description>
+      <guid>https://ameyakarkal.github.io/me/</guid>
+      <description>Staff Product Developer 2019 to present
+ Led initiative to architect and develop configuration driven ETL for analytics product Played key role in an endeavour for cross team data initiative Promoted approach for developing solutions based on iterative experiments rather than hypothesis Working in a team that uses kanban approach to achieve set Objectives measured by Key Results (OKRs)  Contributions:
+ Hands on experience with developing and deploying solutions on top of Azure Kubernetes Services Implemented cloud native data delivery pipelines using Azure Data Factory, Azure Functions and Azure Datalake Analytics Hands on experience with Azure DevOps and Infrastructure as Code primarily using Terraform  Tech Stack :</description>
     </item>
     
     <item>
-      <title>insight 💡</title>
+      <title>💡 insight</title>
       <link>https://ameyakarkal.github.io/projects/insight/</link>
       <pubDate>Wed, 26 Jan 2022 00:00:00 -0500</pubDate>
       
@@ -33,14 +30,17 @@ Role  Led initiative to architect and develop configuration driven ETL for analy
     </item>
     
     <item>
-      <title>me</title>
-      <link>https://ameyakarkal.github.io/me/</link>
+      <title>🗳️ course evaluations</title>
+      <link>https://ameyakarkal.github.io/projects/ce/</link>
       <pubDate>Wed, 26 Jan 2022 00:00:00 -0500</pubDate>
       
-      <guid>https://ameyakarkal.github.io/me/</guid>
-      <description>Staff Product Developer 2019 to present
- Led initiative to architect and develop configuration driven ETL for analytics product Played key role in an endeavour for cross team data initiative Promoted approach for developing solutions based on iterative experiments rather than hypothesis Working in a team that uses kanban approach to achieve set Objectives measured by Key Results (OKRs)  Contributions:
- Hands on experience with developing and deploying solutions on top of Azure Kubernetes Services Implemented cloud native data delivery pipelines using Azure Data Factory, Azure Functions and Azure Datalake Analytics Hands on experience with Azure DevOps and Infrastructure as Code primarily using Terraform  Tech Stack :</description>
+      <guid>https://ameyakarkal.github.io/projects/ce/</guid>
+      <description>entity-framework azure-webapps azure-devops azure-functions dotnet-core
+Web based tool that caters to student facing survey, administrator facing reporting suite for higher education campuses.
+Contributions   Involved in design and implementation of serverless mass mailing infrastructure using Azure Functions
+  Designed and architected data pipelines using Azure Data Factory and Azure Datalake Analytics
+  Contributed to migrating/restructuring multiple services as part of on-prem to azure migration
+  Researched reporting solutions for the team to move away from on premise SSIS (SQL Server Integration Services).</description>
     </item>
     
     <item>

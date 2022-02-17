@@ -43,14 +43,5 @@ Contributions   Involved in design and implementation of serverless mass mailing
   Researched reporting solutions for the team to move away from on premise SSIS (SQL Server Integration Services).</description>
     </item>
     
-    <item>
-      <title>First</title>
-      <link>https://ameyakarkal.github.io/post/first/</link>
-      <pubDate>Fri, 19 Nov 2021 00:01:30 -0500</pubDate>
-      
-      <guid>https://ameyakarkal.github.io/post/first/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

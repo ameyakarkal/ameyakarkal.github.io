@@ -15,7 +15,7 @@
       <guid>https://ameyakarkal.github.io/projects/insight/</guid>
       <description>azure-data-factory azure-kubernetes-services azure-functions dotnet-core node elasticsearch kanban OKRs azure-devops
 Insight is an analytics product that provides a platform to consume data contributed by multiple products at Anthology Inc
-Role  Led initiative to architect and develop configuration driven ETL for analytics product Played key role in an endeavour for cross team data initiative Promoted approach for developing solutions based on iterative experiments rather than hypothesis Working in a team that uses kanban approach to achieve set Objectives measured by Key Results (OKRs)  Contributions  Led design and implementation for AKS based services for indexing data in elastic search clusters.</description>
+Role Led initiative to architect and develop configuration driven ETL for analytics product Played key role in an endeavour for cross team data initiative Promoted approach for developing solutions based on iterative experiments rather than hypothesis Working in a team that uses kanban approach to achieve set Objectives measured by Key Results (OKRs) Contributions Led design and implementation for AKS based services for indexing data in elastic search clusters.</description>
     </item>
     
     <item>
@@ -24,12 +24,10 @@ Role  Led initiative to architect and develop configuration driven ETL for analy
       <pubDate>Wed, 26 Jan 2022 00:00:00 -0500</pubDate>
       
       <guid>https://ameyakarkal.github.io/projects/ce/</guid>
-      <description>entity-framework azure-webapps azure-devops azure-functions dotnet-core
-Web based tool that caters to student facing survey, administrator facing reporting suite for higher education campuses.
-Contributions   Involved in design and implementation of serverless mass mailing infrastructure using Azure Functions
-  Designed and architected data pipelines using Azure Data Factory and Azure Datalake Analytics
-  Contributed to migrating/restructuring multiple services as part of on-prem to azure migration
-  Researched reporting solutions for the team to move away from on premise SSIS (SQL Server Integration Services).</description>
+      <description>Course Evaluations is a Web based tool that caters to student facing survey, administrator facing reporting suite for higher education campuses.
+entity-framework azure-webapps azure-devops azure-functions dotnet-core
+Senior Software Developer
+:key: Key Contributions Team was responsible for architecting and delivering high volume, business critical mass mailing solutions using azure&amp;rsquo;s serverless functions. The initiative improved Service Level Agreement and end-to-end visibility for all stakeholders I was involved in revamping legacy reporting microservice using Azure Data Factory and Azure Datalake Analytics.</description>
     </item>
     
   </channel>

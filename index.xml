@@ -6,14 +6,25 @@
     <description>Recent content on ameya.karkal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Jan 2022 00:00:00 -0500</lastBuildDate><atom:link href="https://ameyakarkal.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Aug 2022 00:00:00 -0500</lastBuildDate><atom:link href="https://ameyakarkal.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>engage</title>
+      <link>https://ameyakarkal.github.io/projects/engage/</link>
+      <pubDate>Fri, 26 Aug 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://ameyakarkal.github.io/projects/engage/</guid>
+      <description>azure-webapps dotnet-core azure-functions terraform
+ Student Activity and Engagement
+  I was involved in architecting an iterative solution for the team&amp;rsquo;s machine learning initiative using Azure Machine Learning Service, Azure Functions and Azure Search. We delivered a managed platform for dev and data science collaboration with emphasis on low operations overhead On a newly assembled team, took ownership of key services spanning multiple domains, improved infrastructure observability using Infrastructure as Code, primarily terraform.</description>
+    </item>
+    
     <item>
       <title>me</title>
       <link>https://ameyakarkal.github.io/me/</link>
       <pubDate>Wed, 26 Jan 2022 00:00:00 -0500</pubDate>
       
       <guid>https://ameyakarkal.github.io/me/</guid>
-      <description>Staff Product Developer 2019 to present
+      <description>x 2019 to present
  Led initiative to architect and develop configuration driven ETL for analytics product Played key role in an endeavour for cross team data initiative Promoted approach for developing solutions based on iterative experiments rather than hypothesis Working in a team that uses kanban approach to achieve set Objectives measured by Key Results (OKRs)  Contributions:
  Hands on experience with developing and deploying solutions on top of Azure Kubernetes Services Implemented cloud native data delivery pipelines using Azure Data Factory, Azure Functions and Azure Datalake Analytics Hands on experience with Azure DevOps and Infrastructure as Code primarily using Terraform  Tech Stack :</description>
     </item>

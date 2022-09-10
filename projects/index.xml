@@ -6,7 +6,18 @@
     <description>Recent content in Projects on ameya.karkal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Jan 2022 00:00:00 -0500</lastBuildDate><atom:link href="https://ameyakarkal.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Aug 2022 00:00:00 -0500</lastBuildDate><atom:link href="https://ameyakarkal.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>engage</title>
+      <link>https://ameyakarkal.github.io/projects/engage/</link>
+      <pubDate>Fri, 26 Aug 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://ameyakarkal.github.io/projects/engage/</guid>
+      <description>azure-webapps dotnet-core azure-functions terraform
+ Student Activity and Engagement
+  I was involved in architecting an iterative solution for the team&amp;rsquo;s machine learning initiative using Azure Machine Learning Service, Azure Functions and Azure Search. We delivered a managed platform for dev and data science collaboration with emphasis on low operations overhead On a newly assembled team, took ownership of key services spanning multiple domains, improved infrastructure observability using Infrastructure as Code, primarily terraform.</description>
+    </item>
+    
     <item>
       <title>💡 insight</title>
       <link>https://ameyakarkal.github.io/projects/insight/</link>

@@ -8,25 +8,29 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Aug 2022 00:00:00 -0500</lastBuildDate><atom:link href="https://ameyakarkal.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>me</title>
+      <link>https://ameyakarkal.github.io/me/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://ameyakarkal.github.io/me/</guid>
+      <description>Software Engineer @ Kangarootime Inc Nov 2023 - present, 4 mos
+dotnet-core aws azure azure-devops terraform postgres graphql
+Working on multiple product teams delivering microservice-based software solutions powered by Kafka
+Taking end to end ownership of solutions deployed on kubernetes in aws and azure
+Actively involved in implementing Backend for Frontend (BFF) solutions built on GraphQL catering web and mobile clients
+Staff Product Developer @ Anthology Inc held positions
+Staff Product Developer Jan 2022 - Nov 2023 1 yr, 11 mos Senior Software Developer Jul 2020 - Dec 2021 1 yr, 6 mos c-sharp dotnet core node elastic-search azure-aks azure-web-app-service azure-function terraform</description>
+    </item>
+    
+    <item>
       <title>engage</title>
       <link>https://ameyakarkal.github.io/projects/engage/</link>
       <pubDate>Fri, 26 Aug 2022 00:00:00 -0500</pubDate>
       
       <guid>https://ameyakarkal.github.io/projects/engage/</guid>
       <description>azure-webapps dotnet-core azure-functions terraform
- Student Activity and Engagement
-  I was involved in architecting an iterative solution for the team&amp;rsquo;s machine learning initiative using Azure Machine Learning Service, Azure Functions and Azure Search. We delivered a managed platform for dev and data science collaboration with emphasis on low operations overhead On a newly assembled team, took ownership of key services spanning multiple domains, improved infrastructure observability using Infrastructure as Code, primarily terraform.</description>
-    </item>
-    
-    <item>
-      <title>me</title>
-      <link>https://ameyakarkal.github.io/me/</link>
-      <pubDate>Wed, 26 Jan 2022 00:00:00 -0500</pubDate>
-      
-      <guid>https://ameyakarkal.github.io/me/</guid>
-      <description>Staff Product Developer Jan 2022 to present
-Engage web based higher education student engagement platform
- As part of an enabling team, Delivered an iterative solution for the team&amp;rsquo;s machine learning initiative using Azure Machine Learning Service, Azure Functions and Azure Cognitive Search. We focused on collaboration between development and data science teams with emphasis on low operations overhead On a newly assembled team, took ownership of key services spanning multiple domains, improved infrastructure observability using Infrastructure as Code, primarily terraform.</description>
+Student Activity and Engagement
+I was involved in architecting an iterative solution for the team&amp;rsquo;s machine learning initiative using Azure Machine Learning Service, Azure Functions and Azure Search. We delivered a managed platform for dev and data science collaboration with emphasis on low operations overhead On a newly assembled team, took ownership of key services spanning multiple domains, improved infrastructure observability using Infrastructure as Code, primarily terraform.</description>
     </item>
     
     <item>
@@ -37,7 +41,7 @@ Engage web based higher education student engagement platform
       <guid>https://ameyakarkal.github.io/projects/insight/</guid>
       <description>azure-data-factory azure-kubernetes-services azure-functions dotnet-core node elasticsearch kanban OKRs azure-devops
 Insight is an analytics product that provides a platform to consume data contributed by multiple products at Anthology Inc
-Role  Led initiative to architect and develop configuration driven ETL for analytics product Played key role in an endeavour for cross team data initiative Promoted approach for developing solutions based on iterative experiments rather than hypothesis Working in a team that uses kanban approach to achieve set Objectives measured by Key Results (OKRs)  Contributions  Led design and implementation for AKS based services for indexing data in elastic search clusters.</description>
+Role Led initiative to architect and develop configuration driven ETL for analytics product Played key role in an endeavour for cross team data initiative Promoted approach for developing solutions based on iterative experiments rather than hypothesis Working in a team that uses kanban approach to achieve set Objectives measured by Key Results (OKRs) Contributions Led design and implementation for AKS based services for indexing data in elastic search clusters.</description>
     </item>
     
     <item>
@@ -47,9 +51,9 @@ Role  Led initiative to architect and develop configuration driven ETL for analy
       
       <guid>https://ameyakarkal.github.io/projects/ce/</guid>
       <description>Course Evaluations is a Web based tool that caters to student facing survey, administrator facing reporting suite for higher education campuses.
- entity-framework azure-webapps azure-devops azure-functions dotnet-core
+entity-framework azure-webapps azure-devops azure-functions dotnet-core
 Senior Software Developer
-:key: Key Contributions  Team was responsible for architecting and delivering high volume, business critical mass mailing solutions using azure&amp;rsquo;s serverless functions. The initiative improved Service Level Agreement and end-to-end visibility for all stakeholders I was involved in revamping legacy reporting microservice using Azure Data Factory and Azure Datalake Analytics.</description>
+:key: Key Contributions Team was responsible for architecting and delivering high volume, business critical mass mailing solutions using azure&amp;rsquo;s serverless functions. The initiative improved Service Level Agreement and end-to-end visibility for all stakeholders I was involved in revamping legacy reporting microservice using Azure Data Factory and Azure Datalake Analytics.</description>
     </item>
     
   </channel>

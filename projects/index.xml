@@ -14,8 +14,8 @@
       
       <guid>https://ameyakarkal.github.io/projects/engage/</guid>
       <description>azure-webapps dotnet-core azure-functions terraform
- Student Activity and Engagement
-  I was involved in architecting an iterative solution for the team&amp;rsquo;s machine learning initiative using Azure Machine Learning Service, Azure Functions and Azure Search. We delivered a managed platform for dev and data science collaboration with emphasis on low operations overhead On a newly assembled team, took ownership of key services spanning multiple domains, improved infrastructure observability using Infrastructure as Code, primarily terraform.</description>
+Student Activity and Engagement
+I was involved in architecting an iterative solution for the team&amp;rsquo;s machine learning initiative using Azure Machine Learning Service, Azure Functions and Azure Search. We delivered a managed platform for dev and data science collaboration with emphasis on low operations overhead On a newly assembled team, took ownership of key services spanning multiple domains, improved infrastructure observability using Infrastructure as Code, primarily terraform.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <guid>https://ameyakarkal.github.io/projects/insight/</guid>
       <description>azure-data-factory azure-kubernetes-services azure-functions dotnet-core node elasticsearch kanban OKRs azure-devops
 Insight is an analytics product that provides a platform to consume data contributed by multiple products at Anthology Inc
-Role  Led initiative to architect and develop configuration driven ETL for analytics product Played key role in an endeavour for cross team data initiative Promoted approach for developing solutions based on iterative experiments rather than hypothesis Working in a team that uses kanban approach to achieve set Objectives measured by Key Results (OKRs)  Contributions  Led design and implementation for AKS based services for indexing data in elastic search clusters.</description>
+Role Led initiative to architect and develop configuration driven ETL for analytics product Played key role in an endeavour for cross team data initiative Promoted approach for developing solutions based on iterative experiments rather than hypothesis Working in a team that uses kanban approach to achieve set Objectives measured by Key Results (OKRs) Contributions Led design and implementation for AKS based services for indexing data in elastic search clusters.</description>
     </item>
     
     <item>
@@ -36,9 +36,9 @@ Role  Led initiative to architect and develop configuration driven ETL for analy
       
       <guid>https://ameyakarkal.github.io/projects/ce/</guid>
       <description>Course Evaluations is a Web based tool that caters to student facing survey, administrator facing reporting suite for higher education campuses.
- entity-framework azure-webapps azure-devops azure-functions dotnet-core
+entity-framework azure-webapps azure-devops azure-functions dotnet-core
 Senior Software Developer
-:key: Key Contributions  Team was responsible for architecting and delivering high volume, business critical mass mailing solutions using azure&amp;rsquo;s serverless functions. The initiative improved Service Level Agreement and end-to-end visibility for all stakeholders I was involved in revamping legacy reporting microservice using Azure Data Factory and Azure Datalake Analytics.</description>
+:key: Key Contributions Team was responsible for architecting and delivering high volume, business critical mass mailing solutions using azure&amp;rsquo;s serverless functions. The initiative improved Service Level Agreement and end-to-end visibility for all stakeholders I was involved in revamping legacy reporting microservice using Azure Data Factory and Azure Datalake Analytics.</description>
     </item>
     
   </channel>

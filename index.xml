@@ -10,13 +10,26 @@
     <item>
       <title>me</title>
       <link>https://ameyakarkal.github.io/me/</link>
-      <pubDate>Fri, 26 Jan 2024 00:00:00 -0500</pubDate>
+      <pubDate>Sat, 30 Mar 2024 00:00:00 -0500</pubDate>
       
       <guid>https://ameyakarkal.github.io/me/</guid>
       <description>Software Engineer @ Kangarootime Inc Nov 2023 - present, 4 mos
 dotnet-core aws azure azure-devops terraform postgres graphql
-Working across multiple product teams delivering microservice-based software solutions powered by kafka Taking end to end ownership of solutions deployed on kubernetes in aws and azure Actively involved in implementing Backend for Frontend (BFF) solution built on GraphQL catering web and mobile clients Staff Product Developer @ Anthology Inc held positions
-Staff Product Developer Jan 2022 - Nov 2023 1 yr, 11 mos Senior Software Developer Jul 2020 - Dec 2021 1 yr, 6 mos c-sharp dotnet core node elastic-search azure-aks azure-web-app-service azure-function terraform</description>
+Individual contributor working across multiple product teams delivering microservice-based software solutions powered by kafka Stabilized high risk/reward project for the startup within the first four months of of joining Streamlined delivery of analytic reports enabling data science team Took ownership of multiple solutions deployed on kubernetes built on dotnet, GraphQL BFF catering web and mobile clients Staff Product Developer @ Anthology Inc held positions</description>
+    </item>
+    
+    <item>
+      <title>stack</title>
+      <link>https://ameyakarkal.github.io/stack/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://ameyakarkal.github.io/stack/</guid>
+      <description>Over the last decade+ I have worked with the following languages / technology stacks in solutions that I have owned and taken to production
+langauages c-sharp sql java javascript?
+backend apis dotnet webapi dotnet mvc node GraphQL dapper entity-framework xunit
+continous delivery, integration &amp;amp; infrastructure azure-devops azure-pipeline azure-repos github-actions terraform terragrunt azure-kubernetes
+cloud services azure-webapp azure-functions azure-durable-functions azure-cdn azure-api-gateway azure-app-insights log-analytics-workspace azure-redis
+data stores sql-server azure-storage-table elastic-search azure-search dynamoDB azure-synapse powerbi-dataset</description>
     </item>
     
     <item>

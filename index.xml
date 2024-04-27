@@ -19,17 +19,6 @@ Individual contributor working across multiple product teams delivering microser
     </item>
     
     <item>
-      <title>projects</title>
-      <link>https://ameyakarkal.github.io/project/</link>
-      <pubDate>Sat, 30 Mar 2024 00:00:00 -0500</pubDate>
-      
-      <guid>https://ameyakarkal.github.io/project/</guid>
-      <description>sending lots of emails serverless azure-functions storage queue micro-service scaling
-I worked on a project that involved sending surveys to students enrolled in higher education degree institutions at end of the semester.
-What were the challenges? The SaaS product used a legacy windows service built on dotnet framework with a crusty cron job system built on top of Quartz to send emails The process was chunky and could not scale to the demands of the growing product This was a multi-tenant service however, issues in one tenant affected performance and quality of service to other tenants There were too many unknowns about if and when the emails would be delivered It lacked tools for internal support people and clients to manage expectations and achieve their goals Solution?</description>
-    </item>
-    
-    <item>
       <title>stack</title>
       <link>https://ameyakarkal.github.io/stack/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 -0500</pubDate>

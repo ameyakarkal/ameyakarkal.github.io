@@ -6,7 +6,7 @@
     <description>Recent content on ameya.karkal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Aug 2022 00:00:00 -0500</lastBuildDate><atom:link href="https://ameyakarkal.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 May 2020 00:00:00 -0500</lastBuildDate><atom:link href="https://ameyakarkal.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>me</title>
       <link>https://ameyakarkal.github.io/me/</link>
@@ -33,37 +33,34 @@ data stores sql-server azure-storage-table elastic-search azure-search dynamoDB 
     </item>
     
     <item>
-      <title>engage</title>
-      <link>https://ameyakarkal.github.io/projects/engage/</link>
-      <pubDate>Fri, 26 Aug 2022 00:00:00 -0500</pubDate>
+      <title>Data &amp; Power BI</title>
+      <link>https://ameyakarkal.github.io/projects/powerbi/</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 -0500</pubDate>
       
-      <guid>https://ameyakarkal.github.io/projects/engage/</guid>
-      <description>azure-webapps dotnet-core azure-functions terraform
-Student Activity and Engagement
-I was involved in architecting an iterative solution for the team&amp;rsquo;s machine learning initiative using Azure Machine Learning Service, Azure Functions and Azure Search. We delivered a managed platform for dev and data science collaboration with emphasis on low operations overhead On a newly assembled team, took ownership of key services spanning multiple domains, improved infrastructure observability using Infrastructure as Code, primarily terraform.</description>
+      <guid>https://ameyakarkal.github.io/projects/powerbi/</guid>
+      <description>Challenges The company that I worked for had an interesting product. They had recently &amp;ldquo;acquired&amp;rdquo; a consultant provided reporting services to higher education institutions. The consultant custom transformed data files from the institutions, loaded them into an on prem database to perform transformations and imported the results into a power bi report. The report was then emailed or shared via powerbi service.
+The institution would then go back and forth with the consultant about to tweek the reporting bits.</description>
     </item>
     
     <item>
-      <title>💡 insight</title>
-      <link>https://ameyakarkal.github.io/projects/insight/</link>
-      <pubDate>Wed, 26 Jan 2022 00:00:00 -0500</pubDate>
+      <title>Data &amp; Azure</title>
+      <link>https://ameyakarkal.github.io/projects/data-lake/</link>
+      <pubDate>Fri, 26 Apr 2019 00:00:00 -0500</pubDate>
       
-      <guid>https://ameyakarkal.github.io/projects/insight/</guid>
-      <description>azure-data-factory azure-kubernetes-services azure-functions dotnet-core node elasticsearch kanban OKRs azure-devops
-Insight is an analytics product that provides a platform to consume data contributed by multiple products at Anthology Inc
-Role Led initiative to architect and develop configuration driven ETL for analytics product Played key role in an endeavour for cross team data initiative Promoted approach for developing solutions based on iterative experiments rather than hypothesis Working in a team that uses kanban approach to achieve set Objectives measured by Key Results (OKRs) Contributions Led design and implementation for AKS based services for indexing data in elastic search clusters.</description>
+      <guid>https://ameyakarkal.github.io/projects/data-lake/</guid>
+      <description>In 2018, I was involved in designing and building a workflow that would allow sharing data between multiple products of the same campany on a single enterprise platform. The company had an enterprise contract with Microsoft Azure, with almost all of their infrastructure built and deployed across regions in azure. Building this workflow using the tools available in azure was a no brainer.
+Stack azure-data-factory azure-kubernetes-services azure-functions dotnet-core node elasticsearch kanban OKRs azure-devops</description>
     </item>
     
     <item>
-      <title>🗳️ course evaluations</title>
-      <link>https://ameyakarkal.github.io/projects/ce/</link>
-      <pubDate>Wed, 26 Jan 2022 00:00:00 -0500</pubDate>
+      <title>Emails &amp; Serverless</title>
+      <link>https://ameyakarkal.github.io/projects/serverless-email/</link>
+      <pubDate>Sat, 27 Feb 2016 00:00:00 -0500</pubDate>
       
-      <guid>https://ameyakarkal.github.io/projects/ce/</guid>
-      <description>Course Evaluations is a Web based tool that caters to student facing survey, administrator facing reporting suite for higher education campuses.
-entity-framework azure-webapps azure-devops azure-functions dotnet-core
-Senior Software Developer
-:key: Key Contributions Team was responsible for architecting and delivering high volume, business critical mass mailing solutions using azure&amp;rsquo;s serverless functions. The initiative improved Service Level Agreement and end-to-end visibility for all stakeholders I was involved in revamping legacy reporting microservice using Azure Data Factory and Azure Datalake Analytics.</description>
+      <guid>https://ameyakarkal.github.io/projects/serverless-email/</guid>
+      <description>I worked on a project that involved sending surveys to students enrolled in higher education degree institutions at end of the semester.
+serverless azure-functions storage queue micro-service scaling
+What were the challenges? We used a legacy windows service built on dotnet framework with a crusty cron job system built on top of Quartz to send emails The process was chunky and could not scale to the demands of the growing product This was a multi-tenant service however, issues in one tenant affected performance and quality of service offered to other tenants There were too many unknowns about if and when the emails would be delivered, this was more of a spaghetti implementation of the older service It lacked tools for internal support people and clients to manage expectations and achieve their goals Solution?</description>
     </item>
     
   </channel>

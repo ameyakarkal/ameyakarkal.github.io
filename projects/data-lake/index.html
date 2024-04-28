@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Data &amp; Azure | ameya.karkal</title>
+<meta name="keywords" content="">
+<meta name="description" content="In 2018, I was involved in designing and building a workflow that would allow sharing data between multiple products of the same campany on a single enterprise platform. The company had an enterprise contract with Microsoft Azure, with almost all of their infrastructure built and deployed across regions in azure. Building this workflow using the tools available in azure was a no brainer.
+Stack azure-data-factory azure-kubernetes-services azure-functions dotnet-core node elasticsearch kanban OKRs azure-devops">
+<meta name="author" content="">
+<link rel="canonical" href="https://ameyakarkal.github.io/projects/data-lake/">
+<meta name="google-site-verification" content="c1Y4Uy69lFhrg0JTlUtN_HbEpAR4g6YjUjDNDztmfMA">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bc1149f4a72aa4858d3a9f71462f75e5884ffe8073ea9d6d5761d5663d651e20.css" integrity="sha256-vBFJ9KcqpIWNOp9xRi915YhP/oBz6p1tV2HVZj1lHiA=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://ameyakarkal.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ameyakarkal.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ameyakarkal.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://ameyakarkal.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://ameyakarkal.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Data &amp; Azure" />
+<meta property="og:description" content="In 2018, I was involved in designing and building a workflow that would allow sharing data between multiple products of the same campany on a single enterprise platform. The company had an enterprise contract with Microsoft Azure, with almost all of their infrastructure built and deployed across regions in azure. Building this workflow using the tools available in azure was a no brainer.
+Stack azure-data-factory azure-kubernetes-services azure-functions dotnet-core node elasticsearch kanban OKRs azure-devops" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ameyakarkal.github.io/projects/data-lake/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2019-04-26T00:00:00-05:00" />
+<meta property="article:modified_time" content="2019-04-26T00:00:00-05:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Data &amp; Azure"/>
+<meta name="twitter:description" content="In 2018, I was involved in designing and building a workflow that would allow sharing data between multiple products of the same campany on a single enterprise platform. The company had an enterprise contract with Microsoft Azure, with almost all of their infrastructure built and deployed across regions in azure. Building this workflow using the tools available in azure was a no brainer.
+Stack azure-data-factory azure-kubernetes-services azure-functions dotnet-core node elasticsearch kanban OKRs azure-devops"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Projects",
+      "item": "https://ameyakarkal.github.io/projects/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Data \u0026 Azure",
+      "item": "https://ameyakarkal.github.io/projects/data-lake/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Data \u0026 Azure",
+  "name": "Data \u0026 Azure",
+  "description": "In 2018, I was involved in designing and building a workflow that would allow sharing data between multiple products of the same campany on a single enterprise platform. The company had an enterprise contract with Microsoft Azure, with almost all of their infrastructure built and deployed across regions in azure. Building this workflow using the tools available in azure was a no brainer.\nStack azure-data-factory azure-kubernetes-services azure-functions dotnet-core node elasticsearch kanban OKRs azure-devops",
+  "keywords": [
+    
+  ],
+  "articleBody": "In 2018, I was involved in designing and building a workflow that would allow sharing data between multiple products of the same campany on a single enterprise platform. The company had an enterprise contract with Microsoft Azure, with almost all of their infrastructure built and deployed across regions in azure. Building this workflow using the tools available in azure was a no brainer.\nStack azure-data-factory azure-kubernetes-services azure-functions dotnet-core node elasticsearch kanban OKRs azure-devops\nChallenges We had legacy systems built out of reporting needs of the individual products. These point solutions grabbed data from other product(s) directly hooking into their databases / data sources. Most of these involved custom background processes written in dotnet or SSIS that ran on schedule to pull/transform and load data sources local to the products.\nThese solutions added additional cognitive load on the product teams who had to learn and duplicate business rules in the transformations (T) that were could not be captured in the source data sources themselves.\nThis created a dependency management nightmare, with product and schema changes having side effects beyond the domain boundary of the source project. If Product A changed / renamed / deleted use of a particular data table, the change caused issues in data pipeline of Product B who may or may not have the capacity of working on the change failures at the moment. Sometimes these change failures would be reported by the client instead of being caught by the product development CI/CD processes.\nSolution We onboarded products to this platform one by one using a domain driven contract. Instead of exporting individual tables, the products would export out domain entities to a shared namespace. This helped the source product to be more conscious how domain changes would be consumed by downstream client products.\nImplementation Producers We initially setup a storage account to allow us implement a namespace system for the products to share their data This allowed using Azure Entra (then Azure Active Directory) to handle authentication and authorization bits. Products used their cognitive knowledge to come up with different ways to export their domain models to the storage account. This helped prevent having a situation where a single team being overloaded with domain knowledge of every single product The solution enabled integrating data from third parties without implementing point solutions per product Consumers The platform provided an opportunity to setup a solution could report across all data points, something that was a pipe dream of the CPO of the company but could not be accomplished without heavy investments yet.\nThe main actors of this reporting domain consisted of\ncatalog orchestrator indexer catalog We setup a small microservice that would scrape metadata and catalog it into a datastore. An API setup on top of it let it be consumed by a react front end for product managers.\norchestrator we setup an azure data factory for orchestrating our pipeline. Due to the custom needs of when the workflow needed to be triggered, we setup a service implemented using azure function to manage the triggering bits. the pipeline used azure datalake analytics workspaces to perform transformations. the results were dumped out back in a private namespace of an azure storage account\nindexer we used elastic search as the OLAP data store. a node based indexer deployed on azure kubernetes service would pull the data from storage account and index them into ES. More on how we achieved this indexer to scale later.\n",
+  "wordCount" : "573",
+  "inLanguage": "en",
+  "datePublished": "2019-04-26T00:00:00-05:00",
+  "dateModified": "2019-04-26T00:00:00-05:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ameyakarkal.github.io/projects/data-lake/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ameya.karkal",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ameyakarkal.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://ameyakarkal.github.io" accesskey="h" title="ameya.karkal (Alt + H)">ameya.karkal</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://ameyakarkal.github.io">Home</a>&nbsp;»&nbsp;<a href="https://ameyakarkal.github.io/projects/">Projects</a></div>
+    <h1 class="post-title">
+      Data &amp; Azure
+    </h1>
+    <div class="post-meta"><span title='2019-04-26 00:00:00 -0500 -0500'>April 26, 2019</span>&nbsp;·&nbsp;3 min
+
+</div>
+  </header> 
+  <div class="post-content"><p>In 2018, I was involved in designing and building a workflow that would allow sharing data between multiple products of the same campany on a single enterprise platform. The company had an enterprise contract with Microsoft Azure, with almost all of their infrastructure built and deployed across regions in azure. Building this workflow using the tools available in azure was a no brainer.</p>
+<h2 id="stack">Stack<a hidden class="anchor" aria-hidden="true" href="#stack">#</a></h2>
+<p><code>azure-data-factory</code> <code>azure-kubernetes-services</code> <code>azure-functions</code> <code>dotnet-core</code> <code>node</code> <code>elasticsearch</code> <code>kanban</code> <code>OKRs</code> <code>azure-devops</code></p>
+<h2 id="challenges">Challenges<a hidden class="anchor" aria-hidden="true" href="#challenges">#</a></h2>
+<p>We had legacy systems built out of reporting needs of the individual products. These point solutions grabbed data from other product(s) directly hooking into their databases / data sources. Most of these  involved custom background processes written in dotnet or SSIS that ran on schedule to pull/transform and load data sources local to the products.</p>
+<p>These solutions added additional cognitive load on the product teams who had to learn and duplicate business rules in the transformations (T) that were could not be captured in the source data sources themselves.</p>
+<p>This created a dependency management nightmare, with product and schema changes having side effects beyond the domain boundary of the source project. If <code>Product A</code> changed / renamed / deleted use of a particular data table, the change caused issues in data pipeline of <code>Product B</code> who may or may not have the capacity of working on the change failures at the moment. Sometimes these change failures would be reported by the client instead of being caught by the product development CI/CD processes.</p>
+<h2 id="solution">Solution<a hidden class="anchor" aria-hidden="true" href="#solution">#</a></h2>
+<p>We onboarded products to this platform one by one using a domain driven contract. Instead of exporting individual tables, the products would export out domain entities to a shared namespace. This helped the source product to be more conscious how domain changes would be consumed by downstream client products.</p>
+<h2 id="implementation">Implementation<a hidden class="anchor" aria-hidden="true" href="#implementation">#</a></h2>
+<h3 id="producers">Producers<a hidden class="anchor" aria-hidden="true" href="#producers">#</a></h3>
+<ul>
+<li>We initially setup a storage account to allow us implement a namespace system for the products to share their data</li>
+<li>This allowed using Azure Entra (then Azure Active Directory) to handle authentication and authorization bits.</li>
+<li>Products used their cognitive knowledge to come up with different ways to export their domain models to the storage account. This helped prevent having a situation where a single team being overloaded with domain knowledge of every single product</li>
+<li>The solution enabled integrating data from third parties without implementing point solutions per product</li>
+</ul>
+<h3 id="consumers">Consumers<a hidden class="anchor" aria-hidden="true" href="#consumers">#</a></h3>
+<p>The platform provided an opportunity to setup a solution could report across all data points, something that was a pipe dream of the CPO of the company but could not be accomplished without heavy investments yet.</p>
+<p>The main actors of this reporting domain consisted of</p>
+<ul>
+<li>catalog</li>
+<li>orchestrator</li>
+<li>indexer</li>
+</ul>
+<p><strong>catalog</strong>
+We setup a small microservice that would scrape metadata and catalog it into a datastore. An API setup on top of it let it be consumed by a react front end for product managers.</p>
+<p><strong>orchestrator</strong>
+we setup an azure data factory for orchestrating our pipeline. Due to the custom needs of when the workflow needed to be triggered, we setup a service implemented using azure function to manage the triggering bits.
+the pipeline used azure datalake analytics workspaces to perform transformations. the results were dumped out back in a private namespace of an azure storage account</p>
+<p><strong>indexer</strong>
+we used elastic search as the OLAP data store. a node based indexer deployed on azure kubernetes service would pull the data from storage account and index them into ES. More on how we achieved this indexer to scale later.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://ameyakarkal.github.io">ameya.karkal</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

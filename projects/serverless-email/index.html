@@ -59,7 +59,16 @@ What were the challenges? We used a legacy windows service built on dotnet frame
         }
 
     </style>
-</noscript><meta property="og:title" content="Emails &amp; Serverless" />
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8TM2N649W7"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', '');
+</script>
+<meta property="og:title" content="Emails &amp; Serverless" />
 <meta property="og:description" content="I worked on a project that involved sending surveys to students enrolled in higher education degree institutions at end of the semester.
 serverless azure-functions storage queue micro-service scaling
 What were the challenges? We used a legacy windows service built on dotnet framework with a crusty cron job system built on top of Quartz to send emails The process was chunky and could not scale to the demands of the growing product This was a multi-tenant service however, issues in one tenant affected performance and quality of service offered to other tenants There were too many unknowns about if and when the emails would be delivered, this was more of a spaghetti implementation of the older service It lacked tools for internal support people and clients to manage expectations and achieve their goals Solution?" />

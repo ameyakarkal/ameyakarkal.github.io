@@ -13,8 +13,9 @@
       <pubDate>Sun, 03 May 2020 00:00:00 -0500</pubDate>
       
       <guid>https://ameyakarkal.github.io/projects/powerbi/</guid>
-      <description>Challenges The company that I worked for had an interesting product. They had recently &amp;ldquo;acquired&amp;rdquo; a consultant provided reporting services to higher education institutions. The consultant custom transformed data files from the institutions, loaded them into an on prem database to perform transformations and imported the results into a power bi report. The report was then emailed or shared via powerbi service.
-The institution would then go back and forth with the consultant about to tweek the reporting bits.</description>
+      <description>The company that I worked for had an interesting problem to solve. They had recently &amp;ldquo;acquired&amp;rdquo; a consultant who provided custom reporting services to higher education institutions which was highly labor intensive and manual. We were asked to fully automate the workflow incrementally AND onboard existing clients
+powerbi azure-storage azure-data-factory azure-web-app powerbi-embeded azure-functions azure-entra
+What were the challenges? The existing process was very custom and manual in nature. The consultant custom transformed data files from the institutions, loaded them into an on prem database to perform transformations and imported the results into a power bi report.</description>
     </item>
     
     <item>

@@ -14,7 +14,7 @@
       
       <guid>https://ameyakarkal.github.io/stack/</guid>
       <description> Over the last decade+ I have worked with the following languages / technology stacks in solutions that I have owned and taken to production
-frontend backend data ops frameworks React apollo-graphql langauages c-sharp sql java javascript apis dotnet webapi dotnet mvc node GraphQL cloud services azure-webapp azure-functions azure-durable-functions azure-cdn azure-api-gateway azure-app-insights log-analytics-workspace azure-redis messaging / async azure-service-bus azure-storage-queue kafka Object Relational Models dapper entity-framework test and perforamance xunit taurus data stores sql-server azure-storage-table elastic-search azure-search dynamoDB azure-synapse powerbi-dataset cloud services azure-data-factory azure-synapse operations azure-devops azure-pipeline azure-repos github-actions terraform terragrunt azure-kubernetes </description>
+frontend backend data ops frameworks React apollo-graphql langauages c-sharp sql java javascript apis dotnet webapi dotnet mvc node GraphQL cloud services azure-webapp azure-functions azure-durable-functions azure-cdn azure-api-gateway azure-redis azure-key-vault observability azure-app-insights log-analytics-workspace seq messaging / async azure-service-bus azure-storage-queue kafka Object Relational Models dapper entity-framework test and perforamance xunit taurus data stores sql-server azure-storage-table elastic-search azure-search dynamoDB azure-synapse powerbi-dataset data pipelines azure-data-factory azure-synapse airflow operations azure-devops azure-pipeline azure-repos github-actions terraform terragrunt azure-kubernetes </description>
     </item>
     
     <item>

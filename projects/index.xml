@@ -6,11 +6,20 @@
     <description>Recent content in Projects on ameya.karkal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 May 2020 00:00:00 -0500</lastBuildDate><atom:link href="https://ameyakarkal.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Jun 2022 00:00:00 -0500</lastBuildDate><atom:link href="https://ameyakarkal.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrating to Azure Data Factory</title>
+      <link>https://ameyakarkal.github.io/projects/migrating-to-azure-datafactory/</link>
+      <pubDate>Fri, 03 Jun 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://ameyakarkal.github.io/projects/migrating-to-azure-datafactory/</guid>
+      <description>How to move between legacy systems and migrate to azure data factory for data pipeline jobs</description>
+    </item>
+    
     <item>
       <title>Data &amp; Power BI</title>
       <link>https://ameyakarkal.github.io/projects/powerbi/</link>
-      <pubDate>Sun, 03 May 2020 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 -0500</pubDate>
       
       <guid>https://ameyakarkal.github.io/projects/powerbi/</guid>
       <description>The company that I worked for had an interesting problem to solve. They had recently &amp;ldquo;acquired&amp;rdquo; a consultant who provided custom reporting services to higher education institutions which was highly labor intensive and manual. We were asked to fully automate the workflow incrementally AND onboard existing clients

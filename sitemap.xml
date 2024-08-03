@@ -11,14 +11,29 @@
     <loc>https://ameyakarkal.github.io/</loc>
     <lastmod>2022-06-03T00:00:00-05:00</lastmod>
   </url><url>
+    <loc>https://ameyakarkal.github.io/tags/azure-data-factory/</loc>
+    <lastmod>2022-06-03T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://ameyakarkal.github.io/tags/data-engineering/</loc>
+    <lastmod>2022-06-03T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://ameyakarkal.github.io/tags/data-engineering-patterns/</loc>
+    <lastmod>2022-06-03T00:00:00-05:00</lastmod>
+  </url><url>
     <loc>https://ameyakarkal.github.io/projects/migrating-to-azure-datafactory/</loc>
     <lastmod>2022-06-03T00:00:00-05:00</lastmod>
   </url><url>
     <loc>https://ameyakarkal.github.io/projects/</loc>
     <lastmod>2022-06-03T00:00:00-05:00</lastmod>
   </url><url>
+    <loc>https://ameyakarkal.github.io/tags/</loc>
+    <lastmod>2022-06-03T00:00:00-05:00</lastmod>
+  </url><url>
     <loc>https://ameyakarkal.github.io/projects/powerbi/</loc>
     <lastmod>2021-07-01T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://ameyakarkal.github.io/projects/scaling-background-data-services/</loc>
+    <lastmod>2020-03-01T00:00:00-05:00</lastmod>
   </url><url>
     <loc>https://ameyakarkal.github.io/projects/data-lake/</loc>
     <lastmod>2019-04-26T00:00:00-05:00</lastmod>
@@ -27,7 +42,5 @@
     <lastmod>2016-02-27T00:00:00-05:00</lastmod>
   </url><url>
     <loc>https://ameyakarkal.github.io/categories/</loc>
-  </url><url>
-    <loc>https://ameyakarkal.github.io/tags/</loc>
   </url>
 </urlset>

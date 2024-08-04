@@ -34,5 +34,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>azure-data-lake</title>
+      <link>https://ameyakarkal.github.io/tags/azure-data-lake/</link>
+      <pubDate>Fri, 26 Apr 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://ameyakarkal.github.io/tags/azure-data-lake/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>datalake</title>
+      <link>https://ameyakarkal.github.io/tags/datalake/</link>
+      <pubDate>Fri, 26 Apr 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://ameyakarkal.github.io/tags/datalake/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

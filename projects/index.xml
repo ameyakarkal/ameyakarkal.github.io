@@ -43,8 +43,7 @@ The product that used this service had a requirement for a data source that coul
       <pubDate>Fri, 26 Apr 2019 00:00:00 -0500</pubDate>
       
       <guid>https://ameyakarkal.github.io/projects/data-lake/</guid>
-      <description>In 2018, I was involved in designing and building a workflow that would allow sharing data between multiple products of the same campany on a single enterprise platform. The company had an enterprise contract with Microsoft Azure, with almost all of their infrastructure built and deployed across regions in azure. Building this workflow using the tools available in azure was a no brainer.
-Stack azure-data-factory azure-kubernetes-services azure-functions dotnet-core node elasticsearch kanban OKRs azure-devops</description>
+      <description>How to setup </description>
     </item>
     
     <item>

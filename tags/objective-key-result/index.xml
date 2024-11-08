@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>objective-key-result on ameya.karkal</title>
+    <link>https://ameyakarkal.github.io/tags/objective-key-result/</link>
+    <description>Recent content in objective-key-result on ameya.karkal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Jun 2024 00:00:00 -0500</lastBuildDate><atom:link href="https://ameyakarkal.github.io/tags/objective-key-result/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Objective Key Result Based Improvements</title>
+      <link>https://ameyakarkal.github.io/projects/okr-based-solution/</link>
+      <pubDate>Mon, 03 Jun 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://ameyakarkal.github.io/projects/okr-based-solution/</guid>
+      <description>How we used Objective and Key Results to improve the performance and usability of software</description>
+    </item>
+    
+  </channel>
+</rss>

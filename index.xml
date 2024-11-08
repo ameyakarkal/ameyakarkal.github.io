@@ -6,7 +6,16 @@
     <description>Recent content on ameya.karkal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jun 2022 00:00:00 -0500</lastBuildDate><atom:link href="https://ameyakarkal.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Oct 2024 00:00:00 -0500</lastBuildDate><atom:link href="https://ameyakarkal.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Event Sourced</title>
+      <link>https://ameyakarkal.github.io/projects/event-sourced/</link>
+      <pubDate>Thu, 10 Oct 2024 00:00:00 -0500</pubDate>
+      
+      <guid>https://ameyakarkal.github.io/projects/event-sourced/</guid>
+      <description>workflow system based on event sourcing</description>
+    </item>
+    
     <item>
       <title>stack</title>
       <link>https://ameyakarkal.github.io/stack/</link>

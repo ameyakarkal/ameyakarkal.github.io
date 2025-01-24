@@ -2,69 +2,91 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Projects on ameya.karkal</title>
-    <link>https://ameyakarkal.github.io/projects/</link>
+    <link>http://localhost:1313/projects/</link>
     <description>Recent content in Projects on ameya.karkal</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Oct 2024 00:00:00 -0500</lastBuildDate><atom:link href="https://ameyakarkal.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Oct 2024 00:00:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Event Sourced</title>
-      <link>https://ameyakarkal.github.io/projects/event-sourced/</link>
+      <link>http://localhost:1313/projects/event-sourced/</link>
       <pubDate>Thu, 10 Oct 2024 00:00:00 -0500</pubDate>
-      
-      <guid>https://ameyakarkal.github.io/projects/event-sourced/</guid>
+      <guid>http://localhost:1313/projects/event-sourced/</guid>
       <description>workflow system based on event sourcing</description>
     </item>
-    
     <item>
       <title>Migrating to Azure Data Factory</title>
-      <link>https://ameyakarkal.github.io/projects/migrating-to-azure-datafactory/</link>
+      <link>http://localhost:1313/projects/migrating-to-azure-datafactory/</link>
       <pubDate>Fri, 03 Jun 2022 00:00:00 -0500</pubDate>
-      
-      <guid>https://ameyakarkal.github.io/projects/migrating-to-azure-datafactory/</guid>
+      <guid>http://localhost:1313/projects/migrating-to-azure-datafactory/</guid>
       <description>How I migrated from a legacy data pipeline to using azure data factory using strangler pattern</description>
     </item>
-    
     <item>
       <title>Data &amp; Power BI</title>
-      <link>https://ameyakarkal.github.io/projects/powerbi/</link>
+      <link>http://localhost:1313/projects/powerbi/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 -0500</pubDate>
-      
-      <guid>https://ameyakarkal.github.io/projects/powerbi/</guid>
-      <description>The company that I worked for had an interesting problem to solve. They had recently &amp;ldquo;acquired&amp;rdquo; a consultant who provided custom reporting services to higher education institutions which was highly labor intensive and manual. We were asked to fully automate the workflow incrementally AND onboard existing clients
-powerbi azure-storage azure-data-factory azure-web-app powerbi-embeded azure-functions azure-entra
-What were the challenges? The existing process was very custom and manual in nature. The consultant custom transformed data files from the institutions, loaded them into an on prem database to perform transformations and imported the results into a power bi report.</description>
+      <guid>http://localhost:1313/projects/powerbi/</guid>
+      <description>&lt;p&gt;The company that I worked for had an interesting problem to solve. They had recently &amp;ldquo;acquired&amp;rdquo; a consultant who provided custom reporting services to higher education institutions which was highly labor intensive and manual. &lt;strong&gt;We were asked to fully automate the workflow incrementally AND onboard existing clients&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;powerbi&lt;/code&gt; &lt;code&gt;azure-storage&lt;/code&gt; &lt;code&gt;azure-data-factory&lt;/code&gt; &lt;code&gt;azure-web-app&lt;/code&gt; &lt;code&gt;powerbi-embeded&lt;/code&gt; &lt;code&gt;azure-functions&lt;/code&gt; &lt;code&gt;azure-entra&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-were-the-challenges&#34;&gt;What were the challenges?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The existing process was very custom and manual in nature. The consultant custom transformed data files from the institutions, loaded them into an on prem database to perform transformations and imported the results into a power bi report.&lt;/li&gt;
+&lt;li&gt;The report was then emailed or shared via powerbi service.&lt;/li&gt;
+&lt;li&gt;The institution would then go back and forth with the consultant about to tweek the reporting bits. This was NOT scalable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;engineering-bits&#34;&gt;engineering bits&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;We setup a dotnet based website for presentation would leverage powerbi embedded with app owns the data strategy to render embedded reports&lt;/li&gt;
+&lt;li&gt;consultant would get the data files from the clients and upload it to azure storage using the web app.&lt;/li&gt;
+&lt;li&gt;we used azure data factory to orchestrate ETLing the data files into the OLAP data model needed for powerbi&lt;/li&gt;
+&lt;li&gt;we setup custom dotnet service that would load / refresh powerbi report from the processed output files from azure data factory.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;learnings&#34;&gt;learnings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;powerbi is a PITA unless you know what you are doing. there are quite a few levels that you need to get it right for it to work as you expect. It greatly reduced the efforts to put reports in a consumable form, however scaling it has its challenges&lt;/li&gt;
+&lt;li&gt;we delivered the workflow iteratively where initially consultants were given access to load the files directly into azure, which was later replaced by a webapp.&lt;/li&gt;
+&lt;li&gt;we continued to deliver the reports by still running the most of the transformations on top of SQL server, thereby avoid releasing large changes with unwanted side effects.&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>Scaling Custom Indexing Data Services</title>
-      <link>https://ameyakarkal.github.io/projects/scaling-background-data-services/</link>
+      <link>http://localhost:1313/projects/scaling-background-data-services/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 -0500</pubDate>
-      
-      <guid>https://ameyakarkal.github.io/projects/scaling-background-data-services/</guid>
-      <description>I was working as a full time Senior Software Developer in a project that indexed data generated by multiple data sources. This legacy system had outgrown from its initial single responsibility of &amp;ldquo;managing indicies in ElasticSearch&amp;rdquo; to handle more things were vague but still could be bucketed in the managing indicies bucket
-The product that used this service had a requirement for a data source that could handle analytical query workload.</description>
+      <guid>http://localhost:1313/projects/scaling-background-data-services/</guid>
+      <description>&lt;p&gt;I was working as a full time Senior Software Developer in a project that indexed data generated by multiple data sources. This legacy system had outgrown from its initial single responsibility of &amp;ldquo;managing indicies in ElasticSearch&amp;rdquo; to handle more things were vague but still could be bucketed in the &lt;em&gt;managing indicies&lt;/em&gt; bucket&lt;/p&gt;
+&lt;p&gt;The product that used this service had a requirement for a data source that could handle analytical query workload. This was 2018, and with the skills and experience available at hand Elasticsearch was chosen the data store. As this was a multi-tenant service it was decided to have an index per client and a metadata index to hold a mapping between tenant-id and index&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Data &amp; Azure</title>
-      <link>https://ameyakarkal.github.io/projects/data-lake/</link>
+      <link>http://localhost:1313/projects/data-lake/</link>
       <pubDate>Fri, 26 Apr 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://ameyakarkal.github.io/projects/data-lake/</guid>
+      <guid>http://localhost:1313/projects/data-lake/</guid>
       <description>How to setup </description>
     </item>
-    
     <item>
       <title>Emails &amp; Serverless</title>
-      <link>https://ameyakarkal.github.io/projects/serverless-email/</link>
+      <link>http://localhost:1313/projects/serverless-email/</link>
       <pubDate>Sat, 27 Feb 2016 00:00:00 -0500</pubDate>
-      
-      <guid>https://ameyakarkal.github.io/projects/serverless-email/</guid>
-      <description>I worked on a project that involved sending surveys to students enrolled in higher education degree institutions at end of the semester.
-serverless azure-functions storage queue micro-service scaling
-What were the challenges? We used a legacy windows service built on dotnet framework with a crusty cron job system built on top of Quartz to send emails The process was chunky and could not scale to the demands of the growing product This was a multi-tenant service however, issues in one tenant affected performance and quality of service offered to other tenants There were too many unknowns about if and when the emails would be delivered, this was more of a spaghetti implementation of the older service It lacked tools for internal support people and clients to manage expectations and achieve their goals Solution?</description>
+      <guid>http://localhost:1313/projects/serverless-email/</guid>
+      <description>&lt;p&gt;I worked on a project that involved sending surveys to students enrolled in higher education degree institutions at end of the semester.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;serverless&lt;/code&gt; &lt;code&gt;azure-functions&lt;/code&gt; &lt;code&gt;storage&lt;/code&gt; &lt;code&gt;queue&lt;/code&gt; &lt;code&gt;micro-service&lt;/code&gt; &lt;code&gt;scaling&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;what-were-the-challenges&#34;&gt;What were the challenges?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;We used a legacy windows service built on dotnet framework with a crusty cron job system built on top of Quartz to send emails&lt;/li&gt;
+&lt;li&gt;The process was chunky and could not scale to the demands of the growing product&lt;/li&gt;
+&lt;li&gt;This was a multi-tenant service however, issues in one tenant affected performance and quality of service offered to other tenants&lt;/li&gt;
+&lt;li&gt;There were too many unknowns about if and when the emails would be delivered, this was more of a spaghetti implementation of the older service&lt;/li&gt;
+&lt;li&gt;It lacked tools for internal support people and clients to manage expectations and achieve their goals&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;scalable&lt;/strong&gt; We designed and implemented an end to end replacement built on top of azure functions and azure storage tables and queues. Azure Durable functions were still out yet.&lt;/li&gt;
+&lt;li&gt;Emphasis was given to make the system transparent to troubleshoot and manage the workflow for developers, internal support staff and clients alike&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;release strategy&lt;/strong&gt; Email as a presentation layer gives you zero room for making mistakes that can be corrected. We released this iteratively moving few tenants over at a time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;engineering-bits&#34;&gt;engineering bits&lt;/h3&gt;
+&lt;p&gt;the system consisted of four actors&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

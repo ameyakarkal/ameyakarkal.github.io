@@ -2,60 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ameyakarkal.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-10-10T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/tags/domain-driven-design/</loc>
+    <loc>http://localhost:1313/tags/domain-driven-design/</loc>
     <lastmod>2024-10-10T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/projects/event-sourced/</loc>
+    <loc>http://localhost:1313/projects/event-sourced/</loc>
     <lastmod>2024-10-10T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/tags/event-sourcing/</loc>
+    <loc>http://localhost:1313/tags/event-sourcing/</loc>
     <lastmod>2024-10-10T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2024-10-10T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-10-10T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/stack/</loc>
+    <loc>http://localhost:1313/stack/</loc>
     <lastmod>2024-07-12T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/me/</loc>
+    <loc>http://localhost:1313/me/</loc>
     <lastmod>2024-03-30T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/tags/azure-data-factory/</loc>
+    <loc>http://localhost:1313/tags/azure-data-factory/</loc>
     <lastmod>2022-06-03T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/tags/data-engineering/</loc>
+    <loc>http://localhost:1313/tags/data-engineering/</loc>
     <lastmod>2022-06-03T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/tags/data-engineering-patterns/</loc>
+    <loc>http://localhost:1313/tags/data-engineering-patterns/</loc>
     <lastmod>2022-06-03T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/projects/migrating-to-azure-datafactory/</loc>
+    <loc>http://localhost:1313/projects/migrating-to-azure-datafactory/</loc>
     <lastmod>2022-06-03T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/projects/powerbi/</loc>
+    <loc>http://localhost:1313/projects/powerbi/</loc>
     <lastmod>2021-07-01T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/projects/scaling-background-data-services/</loc>
+    <loc>http://localhost:1313/projects/scaling-background-data-services/</loc>
     <lastmod>2020-03-01T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/tags/azure-data-lake/</loc>
+    <loc>http://localhost:1313/tags/azure-data-lake/</loc>
     <lastmod>2019-04-26T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/projects/data-lake/</loc>
+    <loc>http://localhost:1313/projects/data-lake/</loc>
     <lastmod>2019-04-26T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/tags/datalake/</loc>
+    <loc>http://localhost:1313/tags/datalake/</loc>
     <lastmod>2019-04-26T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/projects/serverless-email/</loc>
+    <loc>http://localhost:1313/projects/serverless-email/</loc>
     <lastmod>2016-02-27T00:00:00-05:00</lastmod>
   </url><url>
-    <loc>https://ameyakarkal.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>

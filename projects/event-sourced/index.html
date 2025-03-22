@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -9,17 +9,17 @@
 <meta name="keywords" content="domain-driven-design, event sourcing">
 <meta name="description" content="workflow system based on event sourcing">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/projects/event-sourced/">
+<link rel="canonical" href="https://ameyakarkal.github.io/projects/event-sourced/">
 <meta name="google-site-verification" content="c1Y4Uy69lFhrg0JTlUtN_HbEpAR4g6YjUjDNDztmfMA">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://ameyakarkal.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://ameyakarkal.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://ameyakarkal.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://ameyakarkal.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://ameyakarkal.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/event-sourced/">
+<link rel="alternate" hreflang="en" href="https://ameyakarkal.github.io/projects/event-sourced/">
 <noscript>
     <style>
         #theme-toggle,
@@ -65,7 +65,7 @@
 
     gtag('config', 'G-8TM2N649W7');
 </script>
-<meta property="og:url" content="http://localhost:1313/projects/event-sourced/">
+<meta property="og:url" content="https://ameyakarkal.github.io/projects/event-sourced/">
   <meta property="og:site_name" content="ameya.karkal">
   <meta property="og:title" content="Event Sourced">
   <meta property="og:description" content="workflow system based on event sourcing">
@@ -76,9 +76,9 @@
     <meta property="article:modified_time" content="2024-10-10T00:00:00-05:00">
     <meta property="article:tag" content="Domain-Driven-Design">
     <meta property="article:tag" content="Event Sourcing">
-    <meta property="og:image" content="http://localhost:1313/images/projects/event-sourced.jpg">
+    <meta property="og:image" content="https://ameyakarkal.github.io/images/projects/event-sourced.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/projects/event-sourced.jpg">
+<meta name="twitter:image" content="https://ameyakarkal.github.io/images/projects/event-sourced.jpg">
 <meta name="twitter:title" content="Event Sourced">
 <meta name="twitter:description" content="workflow system based on event sourcing">
 
@@ -92,13 +92,13 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Projects",
-      "item": "http://localhost:1313/projects/"
+      "item": "https://ameyakarkal.github.io/projects/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Event Sourced",
-      "item": "http://localhost:1313/projects/event-sourced/"
+      "item": "https://ameyakarkal.github.io/projects/event-sourced/"
     }
   ]
 }
@@ -113,21 +113,21 @@
   "keywords": [
     "domain-driven-design", "event sourcing"
   ],
-  "articleBody": "I am part of a team that works on a business critical microservice that captures a Submission from end users. A request submitted by a party flows through a workflow of approvals and at the end creates / generates sides effects in downstream services. There are several downstream services, each managed and deployed as separate applications by their own team.\nChallenges The microservice keeping us busy had a role of a gatekeeper for data entering into the system. Approval of this Submission triggered multiple CRUD operations on downstream systems. The Submission in our domain was supposed to be IMMUTABLE.\nBusiness requirements, like they do, changed. Business needed overrides to the Submission before approval, Like a person with appropriate rights could change something in the submission.\nWe needed the end users to understand what came in, what alternations were made and by whom and how the result was derived from this altered almost immutable request.\nengineering bits ledger of changes We pressed on keeping Submission immutable as it represented what the original request was being made for.\nAlternations to the Submission were recorded as an Event. The current state of the Submission was then derived by applying EditXXX event on the Submission\nWe setup our system where the domain events were captured as part of an audit trail using MartenDB\nImplementation bits The project uses Mediatr for handling CQRS requests and commands with entity framework at the persistence layer. Instead of applying changes to the Submission model, the CQRS handler would hydrate the domaine entity which would raise appropriate events\nWe setup an event listener which used MartenDB and stored the events under Submission.Id as the stream context. The projection SubmissionProjection was defined which Applied the events stored for the Submission to give users the current state of the Submission\nProjection = Entity + Events MartenDB allows you to define a live version of the Projection, which helps you avoiding loading all the events applied on an entity to get to the current state of the entity.\nlearnings transparency helped end users identify and at times correct configuration changes before they were applied the changes helped reduce support tickets and retroactive reversals, which at times could only be performed by technical support tier or worst case developers ",
-  "wordCount" : "376",
+  "articleBody": "I am part of a team responsible for a business-critical service that captures Submissions from end users. A submission navigates through a series of approval workflows, ultimately generating side effects across various downstream services.\nThese downstream services are independently managed and deployed by separate teams, each overseeing their own distinct applications\nChallenge The service played a role of a gatekeeper for data entering the system. Upon approval, the Submission triggered multiple CRUD operations across downstream systems. In our domain, the Submission in our domain was supposed to be IMMUTABLE.\nBusiness requirements, like they do, changed. Business needed overrides to the Submission before approval, Like a person with appropriate rights could change something in the submission.\nWe needed the end users to understand what came in, what alternations were made and by whom and how the result was derived from this altered almost immutable request.\nengineering bits ledger of changes We pressed on keeping Submission immutable as it represented what the original request was being made for.\nAlternations to the Submission were recorded as an Event. The current state of the Submission was then derived by applying EditXXX event on the Submission\nWe setup our system where the domain events were captured as part of an audit trail using MartenDB\nImplementation bits The project uses Mediatr for handling CQRS requests and commands with entity framework at the persistence layer. Instead of applying changes to the Submission model, the CQRS handler would hydrate the domaine entity which would raise appropriate events\nWe setup an event listener which used MartenDB and stored the events under Submission.Id as the stream context. The projection SubmissionProjection was defined which Applied the events stored for the Submission to give users the current state of the Submission\nProjection = Entity + Events MartenDB allows you to define a live version of the Projection, which helps you avoiding loading all the events applied on an entity to get to the current state of the entity.\nlearnings transparency helped end users identify and at times correct configuration changes before they were applied the changes helped reduce support tickets and retroactive reversals, which at times could only be performed by technical support tier or worst case developers ",
+  "wordCount" : "366",
   "inLanguage": "en",
-  "image":"http://localhost:1313/images/projects/event-sourced.jpg","datePublished": "2024-10-10T00:00:00-05:00",
+  "image":"https://ameyakarkal.github.io/images/projects/event-sourced.jpg","datePublished": "2024-10-10T00:00:00-05:00",
   "dateModified": "2024-10-10T00:00:00-05:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/projects/event-sourced/"
+    "@id": "https://ameyakarkal.github.io/projects/event-sourced/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "ameya.karkal",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:1313/favicon.ico"
+      "url": "https://ameyakarkal.github.io/favicon.ico"
     }
   }
 }
@@ -149,7 +149,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="ameya.karkal (Alt + H)">ameya.karkal</a>
+            <a href="https://ameyakarkal.github.io/" accesskey="h" title="ameya.karkal (Alt + H)">ameya.karkal</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -181,7 +181,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/projects/">Projects</a></div>
+    <div class="breadcrumbs"><a href="https://ameyakarkal.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://ameyakarkal.github.io/projects/">Projects</a></div>
     <h1 class="post-title entry-hint-parent">
       Event Sourced
     </h1>
@@ -192,12 +192,13 @@
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="eager" src="http://localhost:1313/images/projects/event-sourced.jpg" alt="">
+<figure class="entry-cover"><img loading="eager" src="https://ameyakarkal.github.io/images/projects/event-sourced.jpg" alt="">
         
 </figure>
-  <div class="post-content"><p>I am part of a team that works on a business critical microservice that captures a <em>Submission</em> from end users. A <em>request</em> submitted by a party flows through a workflow of approvals and at the end creates / generates sides effects in downstream services. There are several downstream services, each managed and deployed as separate applications by their own team.</p>
-<h2 id="challenges">Challenges<a hidden class="anchor" aria-hidden="true" href="#challenges">#</a></h2>
-<p>The microservice keeping us busy had a role of a gatekeeper for data entering into the system. Approval of this Submission triggered multiple CRUD operations on downstream systems. The <em>Submission</em> in our domain was supposed to be IMMUTABLE.</p>
+  <div class="post-content"><p>I am part of a team responsible for a business-critical service that captures <em>Submissions</em> from end users. A submission navigates through a series of approval workflows, ultimately generating side effects across various downstream services.</p>
+<p>These downstream services are independently managed and deployed by separate teams, each overseeing their own distinct applications</p>
+<h2 id="challenge">Challenge<a hidden class="anchor" aria-hidden="true" href="#challenge">#</a></h2>
+<p>The service played a role of a gatekeeper for data entering the system. Upon approval, the <em>Submission</em> triggered multiple CRUD operations across downstream systems. In our domain, the <em>Submission</em> in our domain was supposed to be IMMUTABLE.</p>
 <p>Business requirements, like they do, changed. Business needed overrides to the <em>Submission</em> before approval, Like a person with appropriate rights could change something in the submission.</p>
 <p>We needed the end users to understand what came in, what alternations were made and by whom and how the result was derived from this altered <em>almost immutable</em> request.</p>
 <h2 id="engineering-bits">engineering bits<a hidden class="anchor" aria-hidden="true" href="#engineering-bits">#</a></h2>
@@ -222,15 +223,15 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/domain-driven-design/">Domain-Driven-Design</a></li>
-      <li><a href="http://localhost:1313/tags/event-sourcing/">Event Sourcing</a></li>
+      <li><a href="https://ameyakarkal.github.io/tags/domain-driven-design/">Domain-Driven-Design</a></li>
+      <li><a href="https://ameyakarkal.github.io/tags/event-sourcing/">Event Sourcing</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">ameya.karkal</a></span> · 
+        <span>&copy; 2025 <a href="https://ameyakarkal.github.io/">ameya.karkal</a></span> · 
 
     <span>
         Powered by

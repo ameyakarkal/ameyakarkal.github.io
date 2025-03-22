@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Datalake on ameya.karkal</title>
-    <link>http://localhost:1313/tags/datalake/</link>
+    <link>https://ameyakarkal.github.io/tags/datalake/</link>
     <description>Recent content in Datalake on ameya.karkal</description>
     <generator>Hugo -- 0.139.5</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Apr 2019 00:00:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/datalake/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ameyakarkal.github.io/tags/datalake/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data &amp; Azure</title>
-      <link>http://localhost:1313/projects/data-lake/</link>
+      <link>https://ameyakarkal.github.io/projects/data-lake/</link>
       <pubDate>Fri, 26 Apr 2019 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/projects/data-lake/</guid>
+      <guid>https://ameyakarkal.github.io/projects/data-lake/</guid>
       <description>How to setup </description>
     </item>
   </channel>

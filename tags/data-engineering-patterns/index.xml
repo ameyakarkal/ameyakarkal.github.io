@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Data-Engineering-Patterns on ameya.karkal</title>
-    <link>http://localhost:1313/tags/data-engineering-patterns/</link>
+    <link>https://ameyakarkal.github.io/tags/data-engineering-patterns/</link>
     <description>Recent content in Data-Engineering-Patterns on ameya.karkal</description>
     <generator>Hugo -- 0.139.5</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 03 Jun 2022 00:00:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/data-engineering-patterns/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ameyakarkal.github.io/tags/data-engineering-patterns/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migrating to Azure Data Factory</title>
-      <link>http://localhost:1313/projects/migrating-to-azure-datafactory/</link>
+      <link>https://ameyakarkal.github.io/projects/migrating-to-azure-datafactory/</link>
       <pubDate>Fri, 03 Jun 2022 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/projects/migrating-to-azure-datafactory/</guid>
+      <guid>https://ameyakarkal.github.io/projects/migrating-to-azure-datafactory/</guid>
       <description>How I migrated from a legacy data pipeline to using azure data factory using strangler pattern</description>
     </item>
   </channel>

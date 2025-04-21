@@ -127,8 +127,12 @@
       <link>https://ameyakarkal.github.io/me/</link>
       <pubDate>Sat, 30 Mar 2024 00:00:00 -0500</pubDate>
       <guid>https://ameyakarkal.github.io/me/</guid>
-      <description>&lt;h2 id=&#34;software-engineer--kangarootime-inc&#34;&gt;Software Engineer @ Kangarootime Inc&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Nov 2023 - present&lt;/strong&gt;&lt;/p&gt;
+      <description>&lt;h2 id=&#34;-kangarootime-inc&#34;&gt;@ Kangarootime Inc&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1+ years of experience as Individual Contributor&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;software-engineer&#34;&gt;Software Engineer&lt;/h3&gt;
+&lt;h4 id=&#34;nov-2023---present-buffalo-new-york-1-years&#34;&gt;Nov 2023 - present, Buffalo New York (1+ years)&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;dotnet-core&lt;/code&gt; &lt;code&gt;aws&lt;/code&gt; &lt;code&gt;azure&lt;/code&gt; &lt;code&gt;azure-devops&lt;/code&gt; &lt;code&gt;terraform&lt;/code&gt; &lt;code&gt;postgres&lt;/code&gt; &lt;a href=&#34;https://graphql.org/&#34;&gt;&lt;code&gt;graphql&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Individual contributor working across multiple product teams delivering microservice-based software solutions powered by &lt;a href=&#34;https://kafka.apache.org/&#34;&gt;kafka&lt;/a&gt;&lt;/li&gt;
@@ -137,8 +141,9 @@
 &lt;li&gt;Took ownership of multiple solutions deployed on kubernetes built on dotnet,&lt;/li&gt;
 &lt;li&gt;Engineering solution on top of dotnet, GraphQL BFFs catering enrollment solutions on mobile and web clients&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;staff-product-developer--anthology-inc&#34;&gt;Staff Product Developer @ Anthology Inc&lt;/h2&gt;
-&lt;p&gt;held positions&lt;/p&gt;</description>
+&lt;h2 id=&#34;-anthology-inc&#34;&gt;@ Anthology Inc&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;3+ years of experience as Individual Contributor&lt;/p&gt;</description>
     </item>
     <item>
       <title>Migrating to Azure Data Factory</title>

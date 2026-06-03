@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Micro-Service on ameya.karkal</title>
-    <link>https://ameyakarkal.github.io/tags/micro-service/</link>
+    <link>http://localhost:1313/tags/micro-service/</link>
     <description>Recent content in Micro-Service on ameya.karkal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 27 Feb 2016 00:00:00 -0500</lastBuildDate>
-    <atom:link href="https://ameyakarkal.github.io/tags/micro-service/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/micro-service/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Emails &amp; Serverless</title>
-      <link>https://ameyakarkal.github.io/projects/serverless-email/</link>
+      <link>http://localhost:1313/projects/serverless-email/</link>
       <pubDate>Sat, 27 Feb 2016 00:00:00 -0500</pubDate>
-      <guid>https://ameyakarkal.github.io/projects/serverless-email/</guid>
+      <guid>http://localhost:1313/projects/serverless-email/</guid>
       <description>&lt;p&gt;I worked on a project that involved sending surveys to students enrolled in higher education degree institutions at end of the semester.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;serverless&lt;/code&gt; &lt;code&gt;azure-functions&lt;/code&gt; &lt;code&gt;storage&lt;/code&gt; &lt;code&gt;queue&lt;/code&gt; &lt;code&gt;micro-service&lt;/code&gt; &lt;code&gt;scaling&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-were-the-challenges&#34;&gt;What were the challenges?&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;Customer Obsession&lt;/code&gt; &lt;code&gt;Frugality&lt;/code&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The service was built on dotnet framework with a crusty cron job system built on top of Quartz to send emails&lt;/li&gt;&#xA;&lt;li&gt;The process was clunky and prone to silent failures :warning: and could not scale to the demands of the growing product&lt;/li&gt;&#xA;&lt;li&gt;This was a multi-tenant service however, issues in one tenant affected performance and quality of service offered to other tenants&lt;/li&gt;&#xA;&lt;li&gt;There were too many unknowns about if and when the emails would be delivered. Operation wise this was a opague service with bare minimum alerts that triggered only when the system failed&lt;/li&gt;&#xA;&lt;li&gt;It lacked tools for internal support people and clients to manage expectations and achieve their goals&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;&#xA;&lt;h3 id=&#34;scalable&#34;&gt;&lt;strong&gt;scalable&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I designed and implemented an end to end replacement built on top of azure functions and azure storage tables and queues. Azure Durable functions were still out yet. We built a home grown system to orchestrate a job that aimed with clear service level objectives&lt;/li&gt;&#xA;&lt;li&gt;I chose azure functions deployed across both dedicated and consumption plans to manage the cost of operation. Highly scalable tasks were orchestrated onn consumption plan which performed single task. Other higher level functions with larger scopes were deployed on dedicated plans that gaves us more flexibility.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;transparent&#34;&gt;transparent&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Emphasis was given to make the system transparent to troubleshoot and manage the workflow for developers, internal support staff and clients alike&lt;/li&gt;&#xA;&lt;li&gt;We generate Custom metric events in azure application insights. The events were granular that helped us define dashboards that could answer important business level questions&lt;/li&gt;&#xA;&lt;li&gt;These help us identify and mitigate issues within acceptable turn around times&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;reliable&#34;&gt;reliable&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;release strategy&lt;/strong&gt; Email as a presentation layer gives you zero room for making mistakes that can be corrected. We released this iteratively moving few tenants over at a time&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;engineering-bits&#34;&gt;engineering bits&lt;/h3&gt;&#xA;&lt;p&gt;the system consisted of four actors&lt;/p&gt;</description>
     </item>
   </channel>

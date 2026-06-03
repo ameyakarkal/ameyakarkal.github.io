@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Azure-Data-Lake on ameya.karkal</title>
-    <link>http://localhost:1313/tags/azure-data-lake/</link>
+    <link>https://ameyakarkal.github.io/tags/azure-data-lake/</link>
     <description>Recent content in Azure-Data-Lake on ameya.karkal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Apr 2019 00:00:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/azure-data-lake/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ameyakarkal.github.io/tags/azure-data-lake/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data &amp; Azure</title>
-      <link>http://localhost:1313/projects/data-lake/</link>
+      <link>https://ameyakarkal.github.io/projects/data-lake/</link>
       <pubDate>Fri, 26 Apr 2019 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/projects/data-lake/</guid>
+      <guid>https://ameyakarkal.github.io/projects/data-lake/</guid>
       <description>&lt;p&gt;In 2018, I was involved in designing and building a workflow that would allow sharing data between multiple products of the same campany on a single enterprise platform. The company had an enterprise contract with Microsoft Azure, with almost all of their infrastructure built and deployed across regions in azure. Building this workflow using the tools available in azure was a no brainer.&lt;/p&gt;&#xA;&lt;h2 id=&#34;stack&#34;&gt;Stack&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;azure-data-factory&lt;/code&gt; &lt;code&gt;azure-kubernetes-services&lt;/code&gt; &lt;code&gt;azure-functions&lt;/code&gt; &lt;code&gt;dotnet-core&lt;/code&gt; &lt;code&gt;node&lt;/code&gt; &lt;code&gt;elasticsearch&lt;/code&gt; &lt;code&gt;kanban&lt;/code&gt; &lt;code&gt;OKRs&lt;/code&gt; &lt;code&gt;azure-devops&lt;/code&gt;&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Domain-Driven-Design on ameya.karkal</title>
-    <link>http://localhost:1313/tags/domain-driven-design/</link>
+    <link>https://ameyakarkal.github.io/tags/domain-driven-design/</link>
     <description>Recent content in Domain-Driven-Design on ameya.karkal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 10 Oct 2024 00:00:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/domain-driven-design/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ameyakarkal.github.io/tags/domain-driven-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Event Sourced</title>
-      <link>http://localhost:1313/projects/event-sourced/</link>
+      <link>https://ameyakarkal.github.io/projects/event-sourced/</link>
       <pubDate>Thu, 10 Oct 2024 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/projects/event-sourced/</guid>
+      <guid>https://ameyakarkal.github.io/projects/event-sourced/</guid>
       <description>&lt;p&gt;I am part of a team responsible for a business-critical service that captures &lt;em&gt;Submissions&lt;/em&gt; from end users. A submission navigates through a series of approval workflows, ultimately generating side effects across various downstream services.&lt;/p&gt;&#xA;&lt;p&gt;These downstream services are independently managed and deployed by separate teams, each overseeing their own distinct applications&lt;/p&gt;&#xA;&lt;h2 id=&#34;challenge&#34;&gt;Challenge&lt;/h2&gt;&#xA;&lt;p&gt;The service played a role of a gatekeeper for data entering the system. Upon approval, the &lt;em&gt;Submission&lt;/em&gt; triggered multiple CRUD operations across downstream systems. In our domain, the &lt;em&gt;Submission&lt;/em&gt; in our domain was supposed to be IMMUTABLE.&lt;/p&gt;</description>
     </item>
   </channel>

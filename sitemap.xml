@@ -3,7 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-03-30T00:00:00-05:00</lastmod>
+    <lastmod>2026-07-17T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/autoscaling/</loc>
+    <lastmod>2026-07-17T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/aws/</loc>
+    <lastmod>2026-07-17T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/keda/</loc>
+    <lastmod>2026-07-17T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/keda/</loc>
+    <lastmod>2026-07-17T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/kubernetes/</loc>
+    <lastmod>2026-07-17T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2026-07-17T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sqs/</loc>
+    <lastmod>2026-07-17T00:00:00-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-07-17T00:00:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cv/</loc>
     <lastmod>2026-03-30T00:00:00-05:00</lastmod>
@@ -13,12 +37,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/resume/</loc>
     <lastmod>2026-03-30T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-03-30T00:00:00-05:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2025-06-03T00:00:00-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/domain-driven-design/</loc>
     <lastmod>2024-10-10T00:00:00-05:00</lastmod>

@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href="/fav.png" type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8TM2N649W7"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8TM2N649W7');
+        }
+      </script>
+<meta property="og:url" content="http://localhost:1313/projects/keda/">
+  <meta property="og:site_name" content="ameya.karkal">
+  <meta property="og:title" content="KEDA ScaledJobs">
+  <meta property="og:description" content="Migrating an async Kubernetes workload from an always-on SQS-polling background service to event-driven KEDA ScaledJobs">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2026-07-17T00:00:00-05:00">
+    <meta property="article:modified_time" content="2026-07-17T00:00:00-05:00">
+    <meta property="article:tag" content="Kubernetes">
+    <meta property="article:tag" content="Keda">
+    <meta property="article:tag" content="Sqs">
+    <meta property="article:tag" content="Autoscaling">
+    <meta property="article:tag" content="Aws">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="KEDA ScaledJobs">
+  <meta name="twitter:description" content="Migrating an async Kubernetes workload from an always-on SQS-polling background service to event-driven KEDA ScaledJobs">
+
+
+
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/language-switcher.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --text-link-color: #007bff;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --text-link-color-dark: #ffffff;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<style>
+    :root {
+        font-feature-settings: "liga" 1, "calt" 1;  
+    }
+
+     
+    body,
+    .secondary-font, #secondary-font,
+    .primary-font, #primary-font,
+    .default-font, #default-font {
+        font-family: "Inter", sans-serif !important;
+    }
+
+    @supports (font-variation-settings: normal) {
+        body,
+        .secondary-font, #secondary-font,
+        .primary-font, #primary-font,
+        .default-font, #default-font {
+            font-family: "InterVariable", sans-serif !important;
+        }
+    }
+
+     
+    #single .page-content ol,
+    #single .page-content ul {
+        list-style-position: outside !important;
+    }
+
+     
+    #single .page-content :not(pre) > code {
+        display: inline-block;
+        padding: 0.15em 0.7em;
+        margin: 0.15em 0.1em;
+        border-radius: 999px;
+        font-size: 0.85em;
+        line-height: 1.5;
+        background-color: var(--secondary-background-color);
+        color: var(--text-link-color) !important;
+        border: 1px solid var(--secondary-color);
+    }
+</style>
+
+
+<meta name="description" content="Migrating an async Kubernetes workload from an always-on SQS-polling background service to event-driven KEDA ScaledJobs">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+
+  
+  
+
+  <title>
+KEDA ScaledJobs | ameya.karkal
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.documentElement.classList.add('dark');
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.documentElement.classList.add('dark');
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                ameya.karkal
+                
+            </a>
+
+            
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Search...'
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Search...' aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contact
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/projects" title="Project case studies">
+                            
+                            Projects
+                        </a>
+                    </li>
+                    
+                    
+
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle" type="button" aria-label="Toggle dark mode">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">KEDA ScaledJobs</h1>
+            <div class="text-center">
+              
+              Jul 17, 2026
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
+            </div>
+          </div>
+          
+          <div class="featured-image">
+            <img class="img-fluid mx-auto d-block" src="/images/projects/keda.png" alt="KEDA ScaledJobs">
+          </div>
+          
+          <article class="page-content  p-2">
+          <h1 id="simple-queue-and-kubernetes-async-workloads">Simple Queue and Kubernetes Async Workloads</h1>
+<h2 id="background">Background</h2>
+<p>This is a typical use-case that crops up in a backend service. A user calls an endpoint to change the state of a system. Say they wanted to enforce Multi Factor Authentication. This setting needs to be cascaded across ALL users for the system (or the tenant the user manages). Rolling out these changes is an open ended operation that needs to be batched and can&rsquo;t be handled within the life cycle of a request.</p>
+<ul>
+<li>You have to manage updates to states of N items that might be too big for an http request</li>
+<li>You want to off load the processing to a separate backend service as you don&rsquo;t want side effects of this operating affecting (processing N items in the current process might be resource intensive)</li>
+<li>You still want the end user to get an accurate state of the operation (failed, succeeded, operation_queued, processing)</li>
+</ul>
+<p>The current architecture of the backend service that I received ownership of, had a pattern where an in- process thread ran in the background, polled the database for such a request (a record in the database with a <code>State</code> column) every <strong>xyz</strong> seconds. The operation was processed in this long running thread that was outside http request life cycle.</p>
+<p>There were several advantages to this approach namely, <strong>keep it simple</strong> the workflow being simple maintenance and deployment wise. Observability wise it was a dream as all  associated to the process were logged under the same owner process.</p>
+<p>However there were few points that stuck out. <strong>tight coupling</strong> The backend-api was tightly coupled to authorizations needed to downstream subsystems (for our multi factor authentication example, say it needed management permissions on AWS Cognito) that were <em>touched</em> in the operation. <strong>wasted cpu</strong> If the operation was not high frequency, it would lead to uncessary polling. <strong>concurrency controls</strong> Horizontal scaling employed on the service meant we needed a concurrency system that used a database lock to ensure only a single instance would pick up and do the actual work which was not scalable.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>backend api queues a job</li>
+<li>separate process picks up job and processes it. this de-couples the level of authorization on resources between the api and the background worker</li>
+<li>de-couple the scaling between api and worker</li>
+</ul>
+<p>We decided the http endpoint would trigger a SQS event. The challenge here was to setup a workload lifecycle in kubernetes.</p>
+<h2 id="solution">Solution</h2>
+<p><img src="/images/projects/keda.svg" alt="sqs-based-kubernetes-workload"></p>
+<p>The HTTP endpoint would persist the details of the job in the database and then hand off the actual work to run by  publishing a <strong>SQS</strong> message. The real challenge was designing the <em>workload lifecycle</em> on Kubernetes that would trigger a work load + scale it via configuration.</p>
+<h3 id="enter-keda">Enter KEDA</h3>
+<p><a href="https://keda.sh/docs/2.20/deploy/">KEDA</a> is an operator that can be installed on kubernetes cluster (we used helm package management for handling operator installations) and can be configured to listen to variety of triggers (SQS in our case) and can be made to trigger workloads and helps with scaling the workloads.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>helm install keda kedacore/keda --namespace keda --create-namespace
+</span></span></code></pre></div><p>Once installed, KEDA is made up of three parts worth understanding:</p>
+<ul>
+<li><strong>Operator.</strong> It watches a custom resource (the <code>ScaledJob</code>) whose definition includes a <em>trigger</em>. The operator monitors that trigger and connects to the external event source. It runs under a <strong>service account</strong> that we assign an identity to, that identity is what grants access to the SQS queue. Triggers come in many flavors (<code>aws-sqs-queue</code>, <code>redis</code>, and more).</li>
+<li><strong>Metrics server.</strong> This is what actually drives scaling. Behind the scenes it feeds the Horizontal Pod Autoscaler (HPA), which decides how many pods/jobs to run.</li>
+<li><strong>Admission webhook.</strong> A guardrail that catches syntax mistakes and duplicate/conflicting definitions before they land in the cluster.</li>
+</ul>
+<h3 id="scaledjob-vs-scaledobject">ScaledJob vs ScaledObject</h3>
+<p>KEDA offers two scaling primitives, and the choice matters here:</p>
+<ul>
+<li>A <strong>ScaledObject</strong> scales a long-running Deployment up and down. That&rsquo;s still a persistent process — just an autoscaled version of the poller I was trying to get rid of.</li>
+<li>A <strong>ScaledJob</strong> spins up an <em>ephemeral</em> Kubernetes Job per unit of work. The job starts, drains its messages, and exits.</li>
+</ul>
+<p>For &ldquo;pick up a message, do a big chunk of work, then stop,&rdquo; the ScaledJob was the right fit. Two properties made it click:</p>
+<ul>
+<li><strong>Scale to zero.</strong> When the queue is empty, nothing runs. No idle poller, no idle cost.</li>
+<li><strong>Scale on queue depth.</strong> As the queue grows, KEDA launches more jobs — scaling is driven by the actual backlog instead of a number I guessed.</li>
+</ul>
+<p>A stripped-down version of the resource looked like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">keda.sh/v1alpha1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ScaledJob</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">async-worker</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">jobTargetRef</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">template</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">serviceAccountName</span>: <span style="color:#ae81ff">async-worker  </span> <span style="color:#75715e"># IAM identity with access to the queue</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">containers</span>:
+</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">worker</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">image</span>: <span style="color:#ae81ff">&lt;registry&gt;/async-worker:latest</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">restartPolicy</span>: <span style="color:#ae81ff">Never</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">minReplicaCount</span>: <span style="color:#ae81ff">0</span>        <span style="color:#75715e"># scale to zero when the queue is empty</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">maxReplicaCount</span>: <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">triggers</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">type</span>: <span style="color:#ae81ff">aws-sqs-queue</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">queueURL</span>: <span style="color:#ae81ff">&lt;sqs-queue-url&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">queueLength</span>: <span style="color:#e6db74">&#34;5&#34;</span>    <span style="color:#75715e"># target messages per job</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">awsRegion</span>: <span style="color:#ae81ff">us-east-1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">authenticationRef</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">name</span>: <span style="color:#ae81ff">keda-aws-credentials</span>
+</span></span></code></pre></div><h3 id="authorizations">Authorizations</h3>
+<ul>
+<li>We handled setting up infrastructure using terraform for IaC</li>
+<li>KEDA operator was assigned an IAM idenity (keda-operator-iam) that had permissions to assume roles</li>
+<li>A trigger was created with iAM identity (trigger-iam) that had permissions on SQS queue</li>
+<li>A kubernetes service account was setup associated to a IAM role (worker-iam) that had permissions on SQS queue (read, delete). The worker pod would use this service account</li>
+</ul>
+<h3 id="putting-it-all-together">Putting it all together</h3>
+<ul>
+<li>user would trigger the action</li>
+<li>backend-api would persist a record in the database + raise an event in SQS (more on this to do in a two phase commit way)</li>
+<li>keda metrics server + operator identity a trigger threshold is met, uses HPA to schedule worker pod</li>
+<li>worker pod fetches SQS messages (1 or more) processes the message</li>
+<li><strong>important</strong> the worker process is resposible for deleting the queue message marking the request was processsed</li>
+</ul>
+<h2 id="learnings">Learnings</h2>
+<ul>
+<li><strong>Event-driven beats polling for bursty async work.</strong> Letting queue depth drive scaling — and scaling to zero when it drains — was both cheaper and simpler than a service that ran around the clock.</li>
+<li><strong>Ephemeral jobs isolate failures.</strong> A per-message Job that starts and exits is far easier to reason about than a shared, long-lived poller holding state in memory.</li>
+<li><strong>Let the platform own scaling.</strong> Handing scaling decisions to KEDA and the HPA removed a whole category of manual tuning and &ldquo;is it keeping up?&rdquo; anxiety from our plate.</li>
+</ul>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#solution">Solution</a>
+      <ul>
+        <li><a href="#enter-keda">Enter KEDA</a></li>
+        <li><a href="#scaledjob-vs-scaledobject">ScaledJob vs ScaledObject</a></li>
+        <li><a href="#authorizations">Authorizations</a></li>
+        <li><a href="#putting-it-all-together">Putting it all together</a></li>
+      </ul>
+    </li>
+    <li><a href="#learnings">Learnings</a></li>
+  </ul>
+</nav>
+              </div>
+          </aside>
+          
+
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              
+              <li class="list-inline-item"><a href="/tags/kubernetes"
+                target="_blank"
+              >kubernetes</a></li>
+              
+              
+              <li class="list-inline-item"><a href="/tags/keda"
+                target="_blank"
+              >keda</a></li>
+              
+              
+              <li class="list-inline-item"><a href="/tags/sqs"
+                target="_blank"
+              >sqs</a></li>
+              
+              
+              <li class="list-inline-item"><a href="/tags/autoscaling"
+                target="_blank"
+              >autoscaling</a></li>
+              
+              
+              <li class="list-inline-item"><a href="/tags/aws"
+                target="_blank"
+              >aws</a></li>
+              
+            </ul>
+          </aside>
+          
+
+          
+          <aside class="social">
+            <h5>Social</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://www.linkedin.com/feed/?shareActive=true&text=Migrating%20an%20async%20Kubernetes%20workload%20from%20an%20always-on%20SQS-polling%20background%20service%20to%20event-driven%20KEDA%20ScaledJobs http%3a%2f%2flocalhost%3a1313%2fprojects%2fkeda%2f">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='https://twitter.com/share?text=KEDA%20ScaledJobs&url=http%3a%2f%2flocalhost%3a1313%2fprojects%2fkeda%2f&hashtags=kubernetes%2ckeda%2csqs%2cautoscaling%2caws'>
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=KEDA%20ScaledJobs: http%3a%2f%2flocalhost%3a1313%2fprojects%2fkeda%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='mailto:?subject=KEDA%20ScaledJobs&amp;body=Check%20out%20this%20site http%3a%2f%2flocalhost%3a1313%2fprojects%2fkeda%2f'>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  true ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
+
+  </div><footer>
+    
+
+
+  
+
+ 
+ 
+<div class="container py-3" id="recent-posts">
+    
+    
+    <div class="h3 text-center text-secondary py-3">
+        Recent Case Studies
+    </div>
+    <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/projects/keda/">
+                        <img src="/images/projects/keda.png" class="card-img-top" alt="KEDA ScaledJobs">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/projects/keda/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="KEDA ScaledJobs">KEDA ScaledJobs</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><h1 id="simple-queue-and-kubernetes-async-workloads">Simple Queue and Kubernetes Async Workloads</h1>
+<h2 id="background">Background</h2>
+<p>This is a typical use-case that crops up in a backend service. A user calls an endpoint to change the state of a system. Say they wanted to enforce Multi Factor Authentication. This setting needs to be cascaded across ALL users for the system …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">July 17, 2026</span>
+                    <a href="/projects/keda/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/projects/event-sourced/">
+                        <img src="/images/projects/event-sourced.jpg" class="card-img-top" alt="Event Sourced">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/projects/event-sourced/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Event Sourced">Event Sourced</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>I am part of a team responsible for a business-critical service that captures <em>Submissions</em> from end users. A submission navigates through a series of approval workflows, ultimately generating side effects across various downstream services.</p>
+<p>These downstream services are independently managed and …</p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">October 10, 2024</span>
+                    <a href="/projects/event-sourced/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/projects/migrating-to-azure-datafactory/">
+                        <img src="/images/projects/migrating-to-azure-datafactory.jpg" class="card-img-top" alt="Migrating to Azure Data Factory">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/projects/migrating-to-azure-datafactory/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Migrating to Azure Data Factory">Migrating to Azure Data …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>I was working at a project that involved munching data generated by multiple data sources, transforming it and making it available for a downstream service that would index this data into a data store that could make it easy to run analytical workloads at run time.</p>
+<p>stack used: <code>azure-data-factory …</code></p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">June 3, 2022</span>
+                    <a href="/projects/migrating-to-azure-datafactory/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://github.com/ameyakarkal" target="_blank" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path id="footer-socialNetworks-github-svg-path"
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/kameya/" target="_blank" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            
+            &copy; 2026  All rights reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (document.body.className.includes("light")) {
+        document.documentElement.classList.add('dark');
+        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'dark');
+    }
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            document.documentElement.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+    <script>
+      
+      window.searchIndexURL = "/index.json";
+    </script>
+    <script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>

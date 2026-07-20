@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Autoscaling on ameya.karkal</title>
-    <link>http://localhost:1313/tags/autoscaling/</link>
+    <link>https://ameyakarkal.github.io/tags/autoscaling/</link>
     <description>Recent content in Autoscaling on ameya.karkal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Jul 2026 00:00:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/autoscaling/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ameyakarkal.github.io/tags/autoscaling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>KEDA ScaledJobs</title>
-      <link>http://localhost:1313/projects/keda/</link>
+      <link>https://ameyakarkal.github.io/projects/keda/</link>
       <pubDate>Fri, 17 Jul 2026 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/projects/keda/</guid>
+      <guid>https://ameyakarkal.github.io/projects/keda/</guid>
       <description>&lt;p&gt;This is a typical use-case that crops up in a backend service. A user calls an endpoint to change the state of a system. Say they wanted to enforce Multi Factor Authentication. This setting needs to be cascaded across ALL users for the system (or the tenant the user manages). Rolling out these changes is an open ended operation that needs to be batched and can&amp;rsquo;t be handled within the life cycle of a request.&lt;/p&gt;</description>
     </item>
   </channel>

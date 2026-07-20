@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>KEDA ScaledJobs on ameya.karkal</title>
-    <link>http://localhost:1313/projects/keda/</link>
+    <link>https://ameyakarkal.github.io/projects/keda/</link>
     <description>Recent content in KEDA ScaledJobs on ameya.karkal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/projects/keda/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ameyakarkal.github.io/projects/keda/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

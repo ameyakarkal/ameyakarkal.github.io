@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Automation on ameya.karkal</title>
-    <link>http://localhost:1313/tags/automation/</link>
+    <link>https://ameyakarkal.github.io/tags/automation/</link>
     <description>Recent content in Automation on ameya.karkal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Jul 2021 00:00:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ameyakarkal.github.io/tags/automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data &amp; Power BI</title>
-      <link>http://localhost:1313/projects/powerbi/</link>
+      <link>https://ameyakarkal.github.io/projects/powerbi/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/projects/powerbi/</guid>
+      <guid>https://ameyakarkal.github.io/projects/powerbi/</guid>
       <description>&lt;p&gt;The company that I worked for had an interesting problem to solve. They had recently &amp;ldquo;acquired&amp;rdquo; a consultant who provided custom reporting services to higher education institutions which was highly labor intensive and manual. &lt;strong&gt;We were asked to fully automate the workflow incrementally AND onboard existing clients&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;powerbi&lt;/code&gt; &lt;code&gt;azure-storage&lt;/code&gt; &lt;code&gt;azure-data-factory&lt;/code&gt; &lt;code&gt;azure-web-app&lt;/code&gt; &lt;code&gt;powerbi-embeded&lt;/code&gt; &lt;code&gt;azure-functions&lt;/code&gt; &lt;code&gt;azure-entra&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-were-the-challenges&#34;&gt;What were the challenges?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The existing process was very custom and manual in nature. The consultant custom transformed data files from the institutions, loaded them into an on prem database to perform transformations and imported the results into a power bi report.&lt;/li&gt;&#xA;&lt;li&gt;The report was then emailed or shared via powerbi service.&lt;/li&gt;&#xA;&lt;li&gt;The institution would then go back and forth with the consultant about to tweek the reporting bits. This was NOT scalable&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;engineering-bits&#34;&gt;engineering bits&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;We setup a dotnet based website for presentation would leverage powerbi embedded with app owns the data strategy to render embedded reports&lt;/li&gt;&#xA;&lt;li&gt;consultant would get the data files from the clients and upload it to azure storage using the web app.&lt;/li&gt;&#xA;&lt;li&gt;we used azure data factory to orchestrate ETLing the data files into the OLAP data model needed for powerbi&lt;/li&gt;&#xA;&lt;li&gt;we setup custom dotnet service that would load / refresh powerbi report from the processed output files from azure data factory.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;learnings&#34;&gt;learnings&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;powerbi is a PITA unless you know what you are doing. there are quite a few levels that you need to get it right for it to work as you expect. It greatly reduced the efforts to put reports in a consumable form, however scaling it has its challenges&lt;/li&gt;&#xA;&lt;li&gt;we delivered the workflow iteratively where initially consultants were given access to load the files directly into azure, which was later replaced by a webapp.&lt;/li&gt;&#xA;&lt;li&gt;we continued to deliver the reports by still running the most of the transformations on top of SQL server, thereby avoid releasing large changes with unwanted side effects.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>

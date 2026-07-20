@@ -2,192 +2,192 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ameya.karkal</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://ameyakarkal.github.io/tags/</link>
     <description>Recent content in Tags on ameya.karkal</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 17 Jul 2026 00:00:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ameyakarkal.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Autoscaling</title>
-      <link>http://localhost:1313/tags/autoscaling/</link>
+      <link>https://ameyakarkal.github.io/tags/autoscaling/</link>
       <pubDate>Fri, 17 Jul 2026 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/autoscaling/</guid>
+      <guid>https://ameyakarkal.github.io/tags/autoscaling/</guid>
       <description></description>
     </item>
     <item>
       <title>Aws</title>
-      <link>http://localhost:1313/tags/aws/</link>
+      <link>https://ameyakarkal.github.io/tags/aws/</link>
       <pubDate>Fri, 17 Jul 2026 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/aws/</guid>
+      <guid>https://ameyakarkal.github.io/tags/aws/</guid>
       <description></description>
     </item>
     <item>
       <title>Keda</title>
-      <link>http://localhost:1313/tags/keda/</link>
+      <link>https://ameyakarkal.github.io/tags/keda/</link>
       <pubDate>Fri, 17 Jul 2026 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/keda/</guid>
+      <guid>https://ameyakarkal.github.io/tags/keda/</guid>
       <description></description>
     </item>
     <item>
       <title>Kubernetes</title>
-      <link>http://localhost:1313/tags/kubernetes/</link>
+      <link>https://ameyakarkal.github.io/tags/kubernetes/</link>
       <pubDate>Fri, 17 Jul 2026 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/kubernetes/</guid>
+      <guid>https://ameyakarkal.github.io/tags/kubernetes/</guid>
       <description></description>
     </item>
     <item>
       <title>Sqs</title>
-      <link>http://localhost:1313/tags/sqs/</link>
+      <link>https://ameyakarkal.github.io/tags/sqs/</link>
       <pubDate>Fri, 17 Jul 2026 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/sqs/</guid>
+      <guid>https://ameyakarkal.github.io/tags/sqs/</guid>
       <description></description>
     </item>
     <item>
       <title>Cv</title>
-      <link>http://localhost:1313/tags/cv/</link>
+      <link>https://ameyakarkal.github.io/tags/cv/</link>
       <pubDate>Mon, 30 Mar 2026 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/cv/</guid>
+      <guid>https://ameyakarkal.github.io/tags/cv/</guid>
       <description></description>
     </item>
     <item>
       <title>Resume</title>
-      <link>http://localhost:1313/tags/resume/</link>
+      <link>https://ameyakarkal.github.io/tags/resume/</link>
       <pubDate>Mon, 30 Mar 2026 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/resume/</guid>
+      <guid>https://ameyakarkal.github.io/tags/resume/</guid>
       <description></description>
     </item>
     <item>
       <title>Tech-Stack</title>
-      <link>http://localhost:1313/tags/tech-stack/</link>
+      <link>https://ameyakarkal.github.io/tags/tech-stack/</link>
       <pubDate>Sat, 12 Jul 2025 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/tech-stack/</guid>
+      <guid>https://ameyakarkal.github.io/tags/tech-stack/</guid>
       <description></description>
     </item>
     <item>
       <title>Tools</title>
-      <link>http://localhost:1313/tags/tools/</link>
+      <link>https://ameyakarkal.github.io/tags/tools/</link>
       <pubDate>Sat, 12 Jul 2025 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/tools/</guid>
+      <guid>https://ameyakarkal.github.io/tags/tools/</guid>
       <description></description>
     </item>
     <item>
       <title>Domain-Driven-Design</title>
-      <link>http://localhost:1313/tags/domain-driven-design/</link>
+      <link>https://ameyakarkal.github.io/tags/domain-driven-design/</link>
       <pubDate>Thu, 10 Oct 2024 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/domain-driven-design/</guid>
+      <guid>https://ameyakarkal.github.io/tags/domain-driven-design/</guid>
       <description></description>
     </item>
     <item>
       <title>Event Sourcing</title>
-      <link>http://localhost:1313/tags/event-sourcing/</link>
+      <link>https://ameyakarkal.github.io/tags/event-sourcing/</link>
       <pubDate>Thu, 10 Oct 2024 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/event-sourcing/</guid>
+      <guid>https://ameyakarkal.github.io/tags/event-sourcing/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure-Data-Factory</title>
-      <link>http://localhost:1313/tags/azure-data-factory/</link>
+      <link>https://ameyakarkal.github.io/tags/azure-data-factory/</link>
       <pubDate>Fri, 03 Jun 2022 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/azure-data-factory/</guid>
+      <guid>https://ameyakarkal.github.io/tags/azure-data-factory/</guid>
       <description></description>
     </item>
     <item>
       <title>Data-Engineering</title>
-      <link>http://localhost:1313/tags/data-engineering/</link>
+      <link>https://ameyakarkal.github.io/tags/data-engineering/</link>
       <pubDate>Fri, 03 Jun 2022 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/data-engineering/</guid>
+      <guid>https://ameyakarkal.github.io/tags/data-engineering/</guid>
       <description></description>
     </item>
     <item>
       <title>Data-Engineering-Patterns</title>
-      <link>http://localhost:1313/tags/data-engineering-patterns/</link>
+      <link>https://ameyakarkal.github.io/tags/data-engineering-patterns/</link>
       <pubDate>Fri, 03 Jun 2022 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/data-engineering-patterns/</guid>
+      <guid>https://ameyakarkal.github.io/tags/data-engineering-patterns/</guid>
       <description></description>
     </item>
     <item>
       <title>Automation</title>
-      <link>http://localhost:1313/tags/automation/</link>
+      <link>https://ameyakarkal.github.io/tags/automation/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/automation/</guid>
+      <guid>https://ameyakarkal.github.io/tags/automation/</guid>
       <description></description>
     </item>
     <item>
       <title>Powerbi</title>
-      <link>http://localhost:1313/tags/powerbi/</link>
+      <link>https://ameyakarkal.github.io/tags/powerbi/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/powerbi/</guid>
+      <guid>https://ameyakarkal.github.io/tags/powerbi/</guid>
       <description></description>
     </item>
     <item>
       <title>Powerbi-Embedded</title>
-      <link>http://localhost:1313/tags/powerbi-embedded/</link>
+      <link>https://ameyakarkal.github.io/tags/powerbi-embedded/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/powerbi-embedded/</guid>
+      <guid>https://ameyakarkal.github.io/tags/powerbi-embedded/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure-Functions</title>
-      <link>http://localhost:1313/tags/azure-functions/</link>
+      <link>https://ameyakarkal.github.io/tags/azure-functions/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/azure-functions/</guid>
+      <guid>https://ameyakarkal.github.io/tags/azure-functions/</guid>
       <description></description>
     </item>
     <item>
       <title>Elasticsearch</title>
-      <link>http://localhost:1313/tags/elasticsearch/</link>
+      <link>https://ameyakarkal.github.io/tags/elasticsearch/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/elasticsearch/</guid>
+      <guid>https://ameyakarkal.github.io/tags/elasticsearch/</guid>
       <description></description>
     </item>
     <item>
       <title>Multi-Tenant</title>
-      <link>http://localhost:1313/tags/multi-tenant/</link>
+      <link>https://ameyakarkal.github.io/tags/multi-tenant/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/multi-tenant/</guid>
+      <guid>https://ameyakarkal.github.io/tags/multi-tenant/</guid>
       <description></description>
     </item>
     <item>
       <title>Scaling</title>
-      <link>http://localhost:1313/tags/scaling/</link>
+      <link>https://ameyakarkal.github.io/tags/scaling/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/scaling/</guid>
+      <guid>https://ameyakarkal.github.io/tags/scaling/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure-Data-Lake</title>
-      <link>http://localhost:1313/tags/azure-data-lake/</link>
+      <link>https://ameyakarkal.github.io/tags/azure-data-lake/</link>
       <pubDate>Fri, 26 Apr 2019 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/azure-data-lake/</guid>
+      <guid>https://ameyakarkal.github.io/tags/azure-data-lake/</guid>
       <description></description>
     </item>
     <item>
       <title>Datalake</title>
-      <link>http://localhost:1313/tags/datalake/</link>
+      <link>https://ameyakarkal.github.io/tags/datalake/</link>
       <pubDate>Fri, 26 Apr 2019 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/datalake/</guid>
+      <guid>https://ameyakarkal.github.io/tags/datalake/</guid>
       <description></description>
     </item>
     <item>
       <title>Micro-Service</title>
-      <link>http://localhost:1313/tags/micro-service/</link>
+      <link>https://ameyakarkal.github.io/tags/micro-service/</link>
       <pubDate>Sat, 27 Feb 2016 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/micro-service/</guid>
+      <guid>https://ameyakarkal.github.io/tags/micro-service/</guid>
       <description></description>
     </item>
     <item>
       <title>Queues</title>
-      <link>http://localhost:1313/tags/queues/</link>
+      <link>https://ameyakarkal.github.io/tags/queues/</link>
       <pubDate>Sat, 27 Feb 2016 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/queues/</guid>
+      <guid>https://ameyakarkal.github.io/tags/queues/</guid>
       <description></description>
     </item>
     <item>
       <title>Serverless</title>
-      <link>http://localhost:1313/tags/serverless/</link>
+      <link>https://ameyakarkal.github.io/tags/serverless/</link>
       <pubDate>Sat, 27 Feb 2016 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/tags/serverless/</guid>
+      <guid>https://ameyakarkal.github.io/tags/serverless/</guid>
       <description></description>
     </item>
   </channel>

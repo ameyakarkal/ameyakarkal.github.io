@@ -395,7 +395,7 @@ KEDA ScaledJobs | ameya.karkal
 </ul>
 <p>We decided the http endpoint would trigger a SQS event. The challenge here was to setup a workload lifecycle in kubernetes.</p>
 <h2 id="solution">Solution</h2>
-<p><img src="/images/projects/keda.svg" alt="sqs-based-kubernetes-workload"></p>
+<p><img src="/images/projects/keda.drawio.svg" alt="sqs-based-kubernetes-workload"></p>
 <p>The HTTP endpoint would persist the details of the job in the database and then hand off the actual work to run by  publishing a <strong>SQS</strong> message. The real challenge was designing the <em>workload lifecycle</em> on Kubernetes that would trigger a work load + scale it via configuration.</p>
 <h3 id="enter-keda">Enter KEDA</h3>
 <p><a href="https://keda.sh/docs/2.20/deploy/">KEDA</a> is an operator that can be installed on kubernetes cluster (we used helm package management for handling operator installations) and can be configured to listen to variety of triggers (SQS in our case) and can be made to trigger workloads and helps with scaling the workloads.</p>

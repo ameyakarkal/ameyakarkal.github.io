@@ -31,7 +31,7 @@
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-8TM2N649W7"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -43,24 +43,24 @@
         }
       </script>
 <meta property="og:url" content="https://ameyakarkal.github.io/projects/keda/">
-  <meta property="og:site_name" content="ameya.karkal">
-  <meta property="og:title" content="KEDA ScaledJobs">
-  <meta property="og:description" content="Migrating an async Kubernetes workload from an always-on SQS-polling background service to event-driven KEDA ScaledJobs">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="projects">
-    <meta property="article:published_time" content="2026-07-17T00:00:00-05:00">
-    <meta property="article:modified_time" content="2026-07-17T00:00:00-05:00">
-    <meta property="article:tag" content="Kubernetes">
-    <meta property="article:tag" content="Keda">
-    <meta property="article:tag" content="Sqs">
-    <meta property="article:tag" content="Autoscaling">
-    <meta property="article:tag" content="Aws">
+	<meta property="og:site_name" content="ameya.karkal">
+	<meta property="og:title" content="KEDA ScaledJobs">
+	<meta property="og:description" content="Migrating an async Kubernetes workload from an always-on SQS-polling background service to event-driven KEDA ScaledJobs">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="projects">
+		<meta property="article:published_time" content="2026-07-17T00:00:00-05:00">
+		<meta property="article:modified_time" content="2026-07-17T00:00:00-05:00">
+		<meta property="article:tag" content="Kubernetes">
+		<meta property="article:tag" content="Keda">
+		<meta property="article:tag" content="Sqs">
+		<meta property="article:tag" content="Autoscaling">
+		<meta property="article:tag" content="Aws">
 
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="KEDA ScaledJobs">
-  <meta name="twitter:description" content="Migrating an async Kubernetes workload from an always-on SQS-polling background service to event-driven KEDA ScaledJobs">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="KEDA ScaledJobs">
+	<meta name="twitter:description" content="Migrating an async Kubernetes workload from an always-on SQS-polling background service to event-driven KEDA ScaledJobs">
 
 
 
@@ -399,7 +399,7 @@ KEDA ScaledJobs | ameya.karkal
 <p>The HTTP endpoint would persist the details of the job in the database and then hand off the actual work to run by  publishing a <strong>SQS</strong> message. The real challenge was designing the <em>workload lifecycle</em> on Kubernetes that would trigger a work load + scale it via configuration.</p>
 <h3 id="enter-keda">Enter KEDA</h3>
 <p><a href="https://keda.sh/docs/2.20/deploy/">KEDA</a> is an operator that can be installed on kubernetes cluster (we used helm package management for handling operator installations) and can be configured to listen to variety of triggers (SQS in our case) and can be made to trigger workloads and helps with scaling the workloads.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>helm install keda kedacore/keda --namespace keda --create-namespace
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>helm install keda kedacore/keda --namespace keda --create-namespace
 </span></span></code></pre></div><p>Once installed, KEDA is made up of three parts worth understanding:</p>
 <ul>
 <li><strong>Operator.</strong> It watches a custom resource (the <code>ScaledJob</code>) whose definition includes a <em>trigger</em>. The operator monitors that trigger and connects to the external event source. It runs under a <strong>service account</strong> that we assign an identity to, that identity is what grants access to the SQS queue. Triggers come in many flavors (<code>aws-sqs-queue</code>, <code>redis</code>, and more).</li>
@@ -418,7 +418,7 @@ KEDA ScaledJobs | ameya.karkal
 <li><strong>Scale on queue depth.</strong> As the queue grows, KEDA launches more jobs — scaling is driven by the actual backlog instead of a number I guessed.</li>
 </ul>
 <p>A stripped-down version of the resource looked like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">keda.sh/v1alpha1</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">keda.sh/v1alpha1</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ScaledJob</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">async-worker</span>
@@ -696,6 +696,30 @@ KEDA ScaledJobs | ameya.karkal
                 <div class="mt-auto card-footer">
                     <span class="float-start">June 3, 2022</span>
                     <a href="/projects/migrating-to-azure-datafactory/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-header">
+                    <a href="/projects/powerbi/">
+                        <img src="/images/projects/data-lake.jpg" class="card-img-top" alt="Data &amp; Power BI">
+                    </a>
+                </div>
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/projects/powerbi/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Data &amp; Power BI">Data &amp; Power BI</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p><p>The company that I worked for had an interesting problem to solve. They had recently &ldquo;acquired&rdquo; a consultant who provided custom reporting services to higher education institutions which was highly labor intensive and manual. <strong>We were asked to fully automate the workflow incrementally AND …</strong></p></p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">July 1, 2021</span>
+                    <a href="/projects/powerbi/" class="float-end btn btn-outline-info btn-sm">Read</a>
                 </div>
             </div>
         </div>
